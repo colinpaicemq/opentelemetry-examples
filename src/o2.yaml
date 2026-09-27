@@ -1,0 +1,71 @@
+# Simple configuration file to read an input file and 
+# send the data to jaeger and the printer
+#https://github.com/open-telemetry/opentelemetry-collector/tree/v0.161.0/receiver/otlpreceiver
+
+receivers:
+  otlp_json_file:
+    include:
+      - "/input.json"
+    start_at: beginning
+
+
+exporters:
+  debug:
+    verbosity: normal # basic: basic, normal, detailed
+  otlp_http/2:
+    endpoint: "http://py:4000"
+    encoding: json
+    tls:
+      insecure: true
+
+  otlp_http:
+    endpoint: "http://jaeger2:4318" # was 4318
+    tls:
+      insecure: true
+#  file/b:
+#      path: /b.file 
+#  file/in:
+#      path: /file.in     
+  prometheus:
+    endpoint: "0.0.0.0:8889"
+    send_timestamps: true
+    metric_expiration: 5m
+        
+connectors:
+  count:
+  span_metrics:
+    metrics_flush_interval: 10s
+    histogram:
+       explicit:
+         buckets: [100us, 500us, 1ms,2ms,3ms,5ms,10ms]
+    dimensions:
+      - name: w3.tracestate
+    exemplars:
+      enabled: false
+#   	: 1000
+    exclude_dimensions:
+        - "collector_instance_id"
+        - "otel_scope_name"
+        - "job"
+        - "exported_job"
+    aggregation_temporality: "AGGREGATION_TEMPORALITY_CUMULATIVE"
+    metrics_expiration: 5m
+    events:
+      enabled: true
+      dimensions:
+        - name: exception.type
+        - name: exception.message
+    resource_metrics_key_attributes:
+      - service.name
+      - w3.tracestate
+ 
+service:
+  pipelines:
+    traces:
+      receivers: [otlp_json_file] 
+#      processors: [transform/timestamps]
+      exporters: [debug,span_metrics,otlp_http] ##    endpoint: "http://0.0.0.0:4000"]
+    metrics:
+      receivers: [span_metrics]
+      exporters: [prometheus]       
+ 

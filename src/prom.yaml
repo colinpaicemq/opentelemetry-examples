@@ -1,0 +1,52 @@
+# Copyright (c) 2026 The Jaeger Authors.
+# SPDX-License-Identifier: Apache-2.0
+
+global:
+
+  # Set low scrape and evaluation intervals to speed up e2e test
+  scrape_interval:     5s # Default is every 15sec
+  evaluation_interval: 5s # Default is every 15sec
+otlp:
+  # Promote key OpenTelemetry resource attributes to Prometheus labels
+  promote_resource_attributes:
+    - service.name
+    - service.namespace
+    - deployment.environment
+
+scrape_configs	 :
+  - job_name: aggregated-trace-metrics
+#    scrape_native_histograms: true
+#    scrape_protocols: [PrometheusProto, OpenMetricsText0.0.4, Text0.0.4]
+#    scrape_native_histograms: true
+    always_scrape_classic_histograms: true
+    convert_classic_histograms_to_nhcb: true
+    static_configs:
+     - targets: [ozf:8889]
+    metric_relabel_configs:
+     - source_labels: [le]
+       separator: ;
+       regex: \+Inf  #="+Inf",
+       target_label: le
+       replacement: "99"
+       action: replace # replace
+#  - job_name: colin
+#    always_scrape_classic_histograms: true
+#    convert_classic_histograms_to_nhcb: true
+#    static_configs:
+#     - targets: [py:4001]
+
+    
+rule_files:
+   - prometheus.spanmetrics.rules.yml    
+#  - job_name: jaeger-collector-metrics
+#    static_configs:
+#    - targets: [ ozf:8888 ]
+    
+#scrape_configs:
+#  - job_name: aggregated-trace-metrics
+#    static_configs:
+#    - targets: ['spm_metrics_source:8889']
+#  - job_name: jaeger-collector-metrics
+#    static_configs:
+#    - targets: [ 'spm_metrics_source:8888' ]    
+

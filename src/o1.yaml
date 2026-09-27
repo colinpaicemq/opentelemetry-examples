@@ -1,0 +1,38 @@
+# Simple configuration file to read an input file and 
+# send the data to jaeger and the printer
+#https://github.com/open-telemetry/opentelemetry-collector/tree/v0.161.0/receiver/otlpreceiver
+
+receivers:
+  otlp_json_file:
+    include:
+      - "/input.json"
+    start_at: beginning
+
+  otlp:
+    protocols:
+      grpc:
+        endpoint: 0.0.0.0:4317
+#  otlp/http:
+#    protocols:
+      http:
+        endpoint: 0.0.0.0:4318        
+    
+exporters:
+  debug:
+    verbosity: detailed # basic: basic, normal, detailed
+  prometheus:
+    endpoint: "0.0.0.0:8889"
+    send_timestamps: true
+    metric_expiration: 5m
+  otlp_http:
+    endpoint: "http://jaeger2:4318" 
+    tls:
+      insecure: true         
+
+ 
+service:
+  pipelines:
+    traces:
+      receivers: [otlp_json_file]  
+      exporters: [debug,otlp_http] 
+

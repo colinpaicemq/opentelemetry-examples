@@ -1,0 +1,2325 @@
+2026-09-25T16:45:06.804Z	info	otelconftelemetry/tracer.go:47	Internal trace telemetry disabled	{"resource": {"service.instance.id": "6555a4d4-f520-4a8c-9fe5-037ec37acab9", "service.name": "otelcol-contrib", "service.version": "0.156.0"}}
+2026-09-25T16:45:06.805Z	info	service@v0.156.0/service.go:256	Starting otelcol-contrib...	{"resource": {"service.instance.id": "6555a4d4-f520-4a8c-9fe5-037ec37acab9", "service.name": "otelcol-contrib", "service.version": "0.156.0"}, "Version": "0.156.0", "NumCPU": 16}
+2026-09-25T16:45:06.805Z	info	extensions/extensions.go:41	Starting extensions...	{"resource": {"service.instance.id": "6555a4d4-f520-4a8c-9fe5-037ec37acab9", "service.name": "otelcol-contrib", "service.version": "0.156.0"}}
+2026-09-25T16:45:06.806Z	info	service@v0.156.0/service.go:279	Everything is ready. Begin running and processing data.	{"resource": {"service.instance.id": "6555a4d4-f520-4a8c-9fe5-037ec37acab9", "service.name": "otelcol-contrib", "service.version": "0.156.0"}}
+2026-09-25T16:45:07.006Z	info	fileconsumer/file.go:423	Started watching file	{"resource": {"service.instance.id": "6555a4d4-f520-4a8c-9fe5-037ec37acab9", "service.name": "otelcol-contrib", "service.version": "0.156.0"}, "otelcol.component.id": "otlp_json_file", "otelcol.component.kind": "receiver", "otelcol.signal": "traces", "component": "fileconsumer", "path": "/input.json"}
+2026-09-25T16:45:07.007Z	info	Traces	{"resource": {"service.instance.id": "6555a4d4-f520-4a8c-9fe5-037ec37acab9", "service.name": "otelcol-contrib", "service.version": "0.156.0"}, "otelcol.component.id": "debug", "otelcol.component.kind": "exporter", "otelcol.signal": "traces", "resource spans": 1, "spans": 2}
+2026-09-25T16:45:07.007Z	info	ResourceSpans #0
+Resource SchemaURL: 
+Resource attributes:
+     -> telemetry.sdk.language: Str(python)
+     -> telemetry.sdk.name: Str(opentelemetry)
+     -> telemetry.sdk.version: Str(1.44.0)
+     -> service.instance.id: Str(d6253977-6459-4066-b9a2-718521a0cd45)
+     -> service.name: Str(Test1)
+     -> w3.tracestate: Str(abc2=xyz2)
+ScopeSpans #0
+ScopeSpans SchemaURL: 
+InstrumentationScope putget.py 
+Span #0
+    Trace ID       : 326cbd7a013259ed8da55d62aa6370b4
+    Parent ID      : 151a89eefbcdc792
+    ID             : 52481ed62491748f
+    Name           : Put code
+    Kind           : Internal
+    Start time     : 2026-09-25 07:14:17.406624093 +0000 UTC
+    End time       : 2026-09-24 19:13:16.038348822 +0000 UTC
+    Status code    : Unset
+    Status message : 
+    DroppedAttributesCount: 0
+    DroppedEventsCount: 0
+    DroppedLinksCount: 0
+Attributes:
+     -> colin: Str(colin1)
+     -> colin2: Str(line58)
+     -> log.file.name: Str(input.json)
+Span #1
+    Trace ID       : 326cbd7a013259ed8da55d62aa6370b4
+    Parent ID      : 
+    ID             : 151a89eefbcdc792
+    Name           : Payroll
+    Kind           : Internal
+    Start time     : 2026-09-25 07:14:17.406527992 +0000 UTC
+    End time       : 2026-09-24 19:13:16.038388416 +0000 UTC
+    Status code    : Unset
+    Status message : 
+    DroppedAttributesCount: 0
+    DroppedEventsCount: 0
+    DroppedLinksCount: 0
+Attributes:
+     -> log.file.name: Str(input.json)
+	{"resource": {"service.instance.id": "6555a4d4-f520-4a8c-9fe5-037ec37acab9", "service.name": "otelcol-contrib", "service.version": "0.156.0"}, "otelcol.component.id": "debug", "otelcol.component.kind": "exporter", "otelcol.signal": "traces"}
+2026-09-25T16:45:07.007Z	info	Traces	{"resource": {"service.instance.id": "6555a4d4-f520-4a8c-9fe5-037ec37acab9", "service.name": "otelcol-contrib", "service.version": "0.156.0"}, "otelcol.component.id": "debug", "otelcol.component.kind": "exporter", "otelcol.signal": "traces", "resource spans": 1, "spans": 2}
+2026-09-25T16:45:07.007Z	info	ResourceSpans #0
+Resource SchemaURL: 
+Resource attributes:
+     -> telemetry.sdk.language: Str(python)
+     -> telemetry.sdk.name: Str(opentelemetry)
+     -> telemetry.sdk.version: Str(1.44.0)
+     -> service.instance.id: Str(8c0788be-06a5-4ea6-9d53-4e78f69dbed7)
+     -> service.name: Str(Test1)
+     -> w3.tracestate: Str(abc2=xyz2)
+ScopeSpans #0
+ScopeSpans SchemaURL: 
+InstrumentationScope putget.py 
+Span #0
+    Trace ID       : 030dae6c33a54b9f6644683e949f51ae
+    Parent ID      : 49bbef12d7ba4386
+    ID             : fce72380698a8886
+    Name           : Put code
+    Kind           : Internal
+    Start time     : 2026-09-25 07:14:54.578051879 +0000 UTC
+    End time       : 2026-09-24 19:13:53.199188461 +0000 UTC
+    Status code    : Unset
+    Status message : 
+    DroppedAttributesCount: 0
+    DroppedEventsCount: 0
+    DroppedLinksCount: 0
+Attributes:
+     -> colin: Str(colin1)
+     -> colin2: Str(line58)
+     -> log.file.name: Str(input.json)
+Span #1
+    Trace ID       : 030dae6c33a54b9f6644683e949f51ae
+    Parent ID      : 
+    ID             : 49bbef12d7ba4386
+    Name           : Payroll
+    Kind           : Internal
+    Start time     : 2026-09-25 07:14:54.577990353 +0000 UTC
+    End time       : 2026-09-24 19:13:53.199245199 +0000 UTC
+    Status code    : Unset
+    Status message : 
+    DroppedAttributesCount: 0
+    DroppedEventsCount: 0
+    DroppedLinksCount: 0
+Attributes:
+     -> log.file.name: Str(input.json)
+	{"resource": {"service.instance.id": "6555a4d4-f520-4a8c-9fe5-037ec37acab9", "service.name": "otelcol-contrib", "service.version": "0.156.0"}, "otelcol.component.id": "debug", "otelcol.component.kind": "exporter", "otelcol.signal": "traces"}
+2026-09-25T16:45:07.007Z	info	Traces	{"resource": {"service.instance.id": "6555a4d4-f520-4a8c-9fe5-037ec37acab9", "service.name": "otelcol-contrib", "service.version": "0.156.0"}, "otelcol.component.id": "debug", "otelcol.component.kind": "exporter", "otelcol.signal": "traces", "resource spans": 1, "spans": 2}
+2026-09-25T16:45:07.007Z	info	ResourceSpans #0
+Resource SchemaURL: 
+Resource attributes:
+     -> telemetry.sdk.language: Str(python)
+     -> telemetry.sdk.name: Str(opentelemetry)
+     -> telemetry.sdk.version: Str(1.44.0)
+     -> service.instance.id: Str(f2c4c25b-f4d3-4f03-972e-efb7cc7817ad)
+     -> service.name: Str(Test1)
+     -> w3.tracestate: Str(abc2=xyz2)
+ScopeSpans #0
+ScopeSpans SchemaURL: 
+InstrumentationScope putget.py 
+Span #0
+    Trace ID       : 33bcd2dbbb6b173d56b535f15256bdb4
+    Parent ID      : 88203788caa4b38c
+    ID             : 76e9d7ad455a9920
+    Name           : Put code
+    Kind           : Internal
+    Start time     : 2026-09-25 07:15:50.401862986 +0000 UTC
+    End time       : 2026-09-24 19:14:49.05736626 +0000 UTC
+    Status code    : Unset
+    Status message : 
+    DroppedAttributesCount: 0
+    DroppedEventsCount: 0
+    DroppedLinksCount: 0
+Attributes:
+     -> colin: Str(colin1)
+     -> colin2: Str(line58)
+     -> log.file.name: Str(input.json)
+Links:
+SpanLink #0
+     -> Trace ID: 33bcd2dbbb6b173d56b535f15256bdb4
+     -> ID: e354fb435af96cc0
+     -> TraceState: 
+     -> DroppedAttributesCount: 0
+Span #1
+    Trace ID       : 33bcd2dbbb6b173d56b535f15256bdb4
+    Parent ID      : 
+    ID             : 88203788caa4b38c
+    Name           : Payroll
+    Kind           : Internal
+    Start time     : 2026-09-25 07:15:50.401745074 +0000 UTC
+    End time       : 2026-09-24 19:14:49.057407047 +0000 UTC
+    Status code    : Unset
+    Status message : 
+    DroppedAttributesCount: 0
+    DroppedEventsCount: 0
+    DroppedLinksCount: 0
+Attributes:
+     -> log.file.name: Str(input.json)
+	{"resource": {"service.instance.id": "6555a4d4-f520-4a8c-9fe5-037ec37acab9", "service.name": "otelcol-contrib", "service.version": "0.156.0"}, "otelcol.component.id": "debug", "otelcol.component.kind": "exporter", "otelcol.signal": "traces"}
+2026-09-25T16:45:07.008Z	info	Traces	{"resource": {"service.instance.id": "6555a4d4-f520-4a8c-9fe5-037ec37acab9", "service.name": "otelcol-contrib", "service.version": "0.156.0"}, "otelcol.component.id": "debug", "otelcol.component.kind": "exporter", "otelcol.signal": "traces", "resource spans": 2, "spans": 8}
+2026-09-25T16:45:07.008Z	info	ResourceSpans #0
+Resource SchemaURL: 
+Resource attributes:
+     -> host.arch: Str(s390x)
+     -> host.name: Str(STD1.ibm.com)
+     -> os.description: Str(IBM z/OS 3.2)
+     -> os.name: Str(z/OS)
+     -> os.type: Str(z_os)
+     -> os.version: Str(03.02.00)
+     -> service.name: Str(CSQ9)
+     -> telemetry.sdk.language: Str(java)
+     -> telemetry.sdk.name: Str(opentelemetry)
+     -> telemetry.sdk.version: Str(1.55.0)
+ScopeSpans #0
+ScopeSpans SchemaURL: 
+InstrumentationScope z/OS OTel 1.4.3
+Span #0
+    Trace ID       : 33bcd2dbbb6b173d56b535f15256bdb4
+    Parent ID      : e354fb434db7b880
+    ID             : e354fb434e64bdc0
+    Name           : MQPUT CSERVER
+    Kind           : Producer
+    Start time     : 2026-09-25 07:15:50.469880388 +0000 UTC
+    End time       : 2026-09-24 19:14:49.05955725 +0000 UTC
+    Status code    : Unset
+    Status message : 
+    DroppedAttributesCount: 0
+    DroppedEventsCount: 0
+    DroppedLinksCount: 0
+Attributes:
+     -> messaging.ibmmq.message.put_appl_type: Str(MQAT_UNIX)
+     -> messaging.operation.name: Str(MQPUT)
+     -> messaging.ibmmq.application.pid: Int(72)
+     -> os.type: Str(z_os)
+     -> messaging.ibmmq.destination.resolved_qmgr_name: Str(CSQ9)
+     -> messaging.ibmmq.destination.resolved_name: Str(CSERVER)
+     -> messaging.system: Str(ibmmq)
+     -> messaging.ibmmq.message.user_id: Str(COLIN)
+     -> messaging.ibmmq.message.put_appl_name: Str(python3.14)
+     -> messaging.ibmmq.application.name: Str(CSQ9CHIN)
+     -> service.version: Str(09.04.04.00)
+     -> messaging.ibmmq.application.reason_code: Str(MQRC_NONE)
+     -> log.file.name: Str(input.json)
+Links:
+SpanLink #0
+     -> Trace ID: 33bcd2dbbb6b173d56b535f15256bdb4
+     -> ID: e354fb434db7b880
+     -> TraceState: 
+     -> DroppedAttributesCount: 0
+Span #1
+    Trace ID       : 33bcd2dbbb6b173d56b535f15256bdb4
+    Parent ID      : e354fb434e64bdc0
+    ID             : e354fb43569c1100
+    Name           : MQGET CSERVER
+    Kind           : Consumer
+    Start time     : 2026-09-25 07:15:50.503533591 +0000 UTC
+    End time       : 2026-09-24 19:14:49.092486343 +0000 UTC
+    Status code    : Unset
+    Status message : 
+    DroppedAttributesCount: 0
+    DroppedEventsCount: 0
+    DroppedLinksCount: 0
+Attributes:
+     -> messaging.operation.name: Str(MQGET)
+     -> messaging.ibmmq.destination.resolved_name: Str(CSERVER)
+     -> messaging.ibmmq.consumer.used_wait_interval: Int(55843)
+     -> messaging.ibmmq.application.pid: Int(56)
+     -> messaging.ibmmq.message.put_appl_type: Str(MQAT_UNIX)
+     -> messaging.ibmmq.message.user_id: Str(COLIN)
+     -> messaging.ibmmq.destination.resolved_qmgr_name: Str(CSQ9)
+     -> os.type: Str(z_os)
+     -> messaging.system: Str(ibmmq)
+     -> messaging.ibmmq.message.put_appl_name: Str(python3.14)
+     -> messaging.ibmmq.consumer.original_wait_interval: Int(200000)
+     -> messaging.ibmmq.application.name: Str(COLIN1)
+     -> service.version: Str(09.04.04.00)
+     -> messaging.ibmmq.application.reason_code: Str(MQRC_NONE)
+     -> log.file.name: Str(input.json)
+Links:
+SpanLink #0
+     -> Trace ID: 33bcd2dbbb6b173d56b535f15256bdb4
+     -> ID: e354fb434e64bdc0
+     -> TraceState: 
+     -> DroppedAttributesCount: 0
+Span #2
+    Trace ID       : 33bcd2dbbb6b173d56b535f15256bdb4
+    Parent ID      : e354fb43569c1100
+    ID             : e354fb43597df180
+    Name           : MQPUT1 CCOLIN
+    Kind           : Producer
+    Start time     : 2026-09-25 07:15:50.515339622 +0000 UTC
+    End time       : 2026-09-24 19:14:49.105077968 +0000 UTC
+    Status code    : Unset
+    Status message : 
+    DroppedAttributesCount: 0
+    DroppedEventsCount: 0
+    DroppedLinksCount: 0
+Attributes:
+     -> messaging.operation.name: Str(MQPUT1)
+     -> messaging.ibmmq.destination.resolved_name: Str(CCOLIN)
+     -> messaging.ibmmq.message.put_appl_name: Str(CSQ9)
+     -> service.version: Str(09.04.04.00)
+     -> messaging.ibmmq.destination.resolved_qmgr_name: Str(MQPA)
+     -> os.type: Str(z_os)
+     -> messaging.system: Str(ibmmq)
+     -> messaging.ibmmq.message.put_appl_type: Str(MQAT_QMGR)
+     -> messaging.ibmmq.message.user_id: Str(COLIN)
+     -> messaging.ibmmq.application.name: Str(COLIN1)
+     -> messaging.ibmmq.application.pid: Int(56)
+     -> messaging.ibmmq.application.reason_code: Str(MQRC_NONE)
+     -> log.file.name: Str(input.json)
+Links:
+SpanLink #0
+     -> Trace ID: 33bcd2dbbb6b173d56b535f15256bdb4
+     -> ID: e354fb43569c1100
+     -> TraceState: 
+     -> DroppedAttributesCount: 0
+Span #3
+    Trace ID       : 33bcd2dbbb6b173d56b535f15256bdb4
+    Parent ID      : e354fb43597df180
+    ID             : e354fb435a166800
+    Name           : MQGET YMQPA
+    Kind           : Consumer
+    Start time     : 2026-09-25 07:15:50.517779029 +0000 UTC
+    End time       : 2026-09-24 19:14:49.106767312 +0000 UTC
+    Status code    : Unset
+    Status message : 
+    DroppedAttributesCount: 0
+    DroppedEventsCount: 0
+    DroppedLinksCount: 0
+Attributes:
+     -> messaging.ibmmq.application.reason_code: Str(MQRC_NONE)
+     -> os.type: Str(z_os)
+     -> messaging.ibmmq.consumer.used_wait_interval: Int(55853)
+     -> messaging.ibmmq.application.pid: Int(72)
+     -> messaging.ibmmq.destination.resolved_name: Str(YMQPA)
+     -> messaging.ibmmq.consumer.original_wait_interval: Int(300000)
+     -> messaging.ibmmq.destination.resolved_qmgr_name: Str(CSQ9)
+     -> messaging.ibmmq.message.put_appl_type: Str(MQAT_QMGR)
+     -> messaging.system: Str(ibmmq)
+     -> messaging.ibmmq.message.user_id: Str(COLIN)
+     -> messaging.ibmmq.message.put_appl_name: Str(CSQ9)
+     -> messaging.ibmmq.application.name: Str(CSQ9CHIN)
+     -> service.version: Str(09.04.04.00)
+     -> messaging.operation.name: Str(MQGET)
+     -> log.file.name: Str(input.json)
+Links:
+SpanLink #0
+     -> Trace ID: 33bcd2dbbb6b173d56b535f15256bdb4
+     -> ID: e354fb43597df180
+     -> TraceState: 
+     -> DroppedAttributesCount: 0
+ResourceSpans #1
+Resource SchemaURL: 
+Resource attributes:
+     -> host.arch: Str(s390x)
+     -> host.name: Str(STD1.ibm.com)
+     -> os.description: Str(IBM z/OS 3.2)
+     -> os.name: Str(z/OS)
+     -> os.type: Str(z_os)
+     -> os.version: Str(03.02.00)
+     -> service.name: Str(MQPA)
+     -> telemetry.sdk.language: Str(java)
+     -> telemetry.sdk.name: Str(opentelemetry)
+     -> telemetry.sdk.version: Str(1.55.0)
+ScopeSpans #0
+ScopeSpans SchemaURL: 
+InstrumentationScope z/OS OTel 1.4.3
+Span #0
+    Trace ID       : 33bcd2dbbb6b173d56b535f15256bdb4
+    Parent ID      : 76e9d7ad455a9920
+    ID             : e354fb434d23bd40
+    Name           : MQPUT RSERVER
+    Kind           : Producer
+    Start time     : 2026-09-25 07:15:50.464744357 +0000 UTC
+    End time       : 2026-09-24 19:14:49.05424289 +0000 UTC
+    Status code    : Unset
+    Status message : 
+    DroppedAttributesCount: 0
+    DroppedEventsCount: 0
+    DroppedLinksCount: 0
+Attributes:
+     -> os.type: Str(z_os)
+     -> messaging.ibmmq.application.reason_code: Str(MQRC_NONE)
+     -> messaging.ibmmq.message.put_appl_name: Str(MQPA)
+     -> messaging.ibmmq.message.put_appl_type: Str(MQAT_QMGR)
+     -> messaging.ibmmq.destination.resolved_qmgr_name: Str(CSQ9)
+     -> messaging.ibmmq.destination.resolved_name: Str(CSERVER)
+     -> messaging.system: Str(ibmmq)
+     -> service.version: Str(09.04.04.00)
+     -> messaging.ibmmq.message.user_id: Str(COLIN)
+     -> messaging.ibmmq.application.name: Str(python3.14                  )
+     -> messaging.ibmmq.application.pid: Int(71)
+     -> messaging.operation.name: Str(MQPUT)
+     -> log.file.name: Str(input.json)
+Links:
+SpanLink #0
+     -> Trace ID: 33bcd2dbbb6b173d56b535f15256bdb4
+     -> ID: 76e9d7ad455a9920
+     -> TraceState: 
+     -> DroppedAttributesCount: 0
+Span #1
+    Trace ID       : 33bcd2dbbb6b173d56b535f15256bdb4
+    Parent ID      : e354fb434d23bd40
+    ID             : e354fb434db7b880
+    Name           : MQGET CSQ9
+    Kind           : Consumer
+    Start time     : 2026-09-25 07:15:50.46711206 +0000 UTC
+    End time       : 2026-09-24 19:14:49.056287687 +0000 UTC
+    Status code    : Unset
+    Status message : 
+    DroppedAttributesCount: 0
+    DroppedEventsCount: 0
+    DroppedLinksCount: 0
+Attributes:
+     -> messaging.ibmmq.application.reason_code: Str(MQRC_NONE)
+     -> os.type: Str(z_os)
+     -> messaging.ibmmq.consumer.used_wait_interval: Int(55824)
+     -> messaging.ibmmq.application.pid: Int(71)
+     -> messaging.ibmmq.destination.resolved_name: Str(CSQ9)
+     -> messaging.ibmmq.consumer.original_wait_interval: Int(299999)
+     -> messaging.ibmmq.destination.resolved_qmgr_name: Str(MQPA)
+     -> messaging.ibmmq.message.put_appl_type: Str(MQAT_QMGR)
+     -> messaging.system: Str(ibmmq)
+     -> messaging.ibmmq.message.user_id: Str(COLIN)
+     -> messaging.ibmmq.message.put_appl_name: Str(MQPA)
+     -> messaging.ibmmq.application.name: Str(MQPACHIN)
+     -> service.version: Str(09.04.04.00)
+     -> messaging.operation.name: Str(MQGET)
+     -> log.file.name: Str(input.json)
+Links:
+SpanLink #0
+     -> Trace ID: 33bcd2dbbb6b173d56b535f15256bdb4
+     -> ID: e354fb434d23bd40
+     -> TraceState: 
+     -> DroppedAttributesCount: 0
+Span #2
+    Trace ID       : 33bcd2dbbb6b173d56b535f15256bdb4
+    Parent ID      : e354fb435a166800
+    ID             : e354fb435a7abbc0
+    Name           : MQPUT CCOLIN
+    Kind           : Producer
+    Start time     : 2026-09-25 07:15:50.519384263 +0000 UTC
+    End time       : 2026-09-24 19:14:49.10899039 +0000 UTC
+    Status code    : Unset
+    Status message : 
+    DroppedAttributesCount: 0
+    DroppedEventsCount: 0
+    DroppedLinksCount: 0
+Attributes:
+     -> messaging.ibmmq.message.put_appl_type: Str(MQAT_UNIX)
+     -> messaging.operation.name: Str(MQPUT)
+     -> messaging.ibmmq.application.pid: Int(71)
+     -> os.type: Str(z_os)
+     -> messaging.ibmmq.destination.resolved_qmgr_name: Str(MQPA)
+     -> messaging.ibmmq.destination.resolved_name: Str(CCOLIN)
+     -> messaging.system: Str(ibmmq)
+     -> messaging.ibmmq.message.user_id: Str(COLIN)
+     -> messaging.ibmmq.message.put_appl_name: Str(python3.14)
+     -> messaging.ibmmq.application.name: Str(MQPACHIN)
+     -> service.version: Str(09.04.04.00)
+     -> messaging.ibmmq.application.reason_code: Str(MQRC_NONE)
+     -> log.file.name: Str(input.json)
+Links:
+SpanLink #0
+     -> Trace ID: 33bcd2dbbb6b173d56b535f15256bdb4
+     -> ID: e354fb435a166800
+     -> TraceState: 
+     -> DroppedAttributesCount: 0
+Span #3
+    Trace ID       : 33bcd2dbbb6b173d56b535f15256bdb4
+    Parent ID      : e354fb435a7abbc0
+    ID             : e354fb435af96cc0
+    Name           : MQGET CCOLIN
+    Kind           : Consumer
+    Start time     : 2026-09-25 07:15:50.521411325 +0000 UTC
+    End time       : 2026-09-24 19:14:49.110282109 +0000 UTC
+    Status code    : Unset
+    Status message : 
+    DroppedAttributesCount: 0
+    DroppedEventsCount: 0
+    DroppedLinksCount: 0
+Attributes:
+     -> messaging.ibmmq.application.reason_code: Str(MQRC_NONE)
+     -> messaging.ibmmq.message.put_appl_name: Str(python3.14)
+     -> service.version: Str(09.04.04.00)
+     -> messaging.ibmmq.destination.resolved_name: Str(CCOLIN)
+     -> messaging.ibmmq.application.pid: Int(71)
+     -> messaging.ibmmq.destination.resolved_qmgr_name: Str(MQPA)
+     -> messaging.ibmmq.message.put_appl_type: Str(MQAT_UNIX)
+     -> messaging.system: Str(ibmmq)
+     -> messaging.operation.name: Str(MQGET)
+     -> messaging.ibmmq.message.user_id: Str(COLIN)
+     -> messaging.ibmmq.application.name: Str(python3.14                  )
+     -> os.type: Str(z_os)
+     -> log.file.name: Str(input.json)
+Links:
+SpanLink #0
+     -> Trace ID: 33bcd2dbbb6b173d56b535f15256bdb4
+     -> ID: e354fb435a7abbc0
+     -> TraceState: 
+     -> DroppedAttributesCount: 0
+	{"resource": {"service.instance.id": "6555a4d4-f520-4a8c-9fe5-037ec37acab9", "service.name": "otelcol-contrib", "service.version": "0.156.0"}, "otelcol.component.id": "debug", "otelcol.component.kind": "exporter", "otelcol.signal": "traces"}
+2026-09-25T16:45:07.008Z	info	Traces	{"resource": {"service.instance.id": "6555a4d4-f520-4a8c-9fe5-037ec37acab9", "service.name": "otelcol-contrib", "service.version": "0.156.0"}, "otelcol.component.id": "debug", "otelcol.component.kind": "exporter", "otelcol.signal": "traces", "resource spans": 1, "spans": 2}
+2026-09-25T16:45:07.008Z	info	ResourceSpans #0
+Resource SchemaURL: 
+Resource attributes:
+     -> telemetry.sdk.language: Str(python)
+     -> telemetry.sdk.name: Str(opentelemetry)
+     -> telemetry.sdk.version: Str(1.44.0)
+     -> service.instance.id: Str(02f897d3-241c-4623-88e9-9180d9fe1413)
+     -> service.name: Str(Test1)
+     -> w3.tracestate: Str(abc2=xyz2)
+ScopeSpans #0
+ScopeSpans SchemaURL: 
+InstrumentationScope putget.py 
+Span #0
+    Trace ID       : d21d731c120cafd75017e43d8b5c475f
+    Parent ID      : 53bfe1b42a9085c5
+    ID             : 2ea5f21a8c3cb586
+    Name           : Put code
+    Kind           : Internal
+    Start time     : 2026-09-25 07:18:09.59252923 +0000 UTC
+    End time       : 2026-09-24 19:17:08.242121672 +0000 UTC
+    Status code    : Unset
+    Status message : 
+    DroppedAttributesCount: 0
+    DroppedEventsCount: 0
+    DroppedLinksCount: 0
+Attributes:
+     -> colin: Str(colin1)
+     -> colin2: Str(line58)
+     -> log.file.name: Str(input.json)
+Span #1
+    Trace ID       : d21d731c120cafd75017e43d8b5c475f
+    Parent ID      : 
+    ID             : 53bfe1b42a9085c5
+    Name           : Payroll
+    Kind           : Internal
+    Start time     : 2026-09-25 07:18:09.592424683 +0000 UTC
+    End time       : 2026-09-24 19:17:08.242181796 +0000 UTC
+    Status code    : Unset
+    Status message : 
+    DroppedAttributesCount: 0
+    DroppedEventsCount: 0
+    DroppedLinksCount: 0
+Attributes:
+     -> log.file.name: Str(input.json)
+	{"resource": {"service.instance.id": "6555a4d4-f520-4a8c-9fe5-037ec37acab9", "service.name": "otelcol-contrib", "service.version": "0.156.0"}, "otelcol.component.id": "debug", "otelcol.component.kind": "exporter", "otelcol.signal": "traces"}
+2026-09-25T16:45:07.008Z	info	Traces	{"resource": {"service.instance.id": "6555a4d4-f520-4a8c-9fe5-037ec37acab9", "service.name": "otelcol-contrib", "service.version": "0.156.0"}, "otelcol.component.id": "debug", "otelcol.component.kind": "exporter", "otelcol.signal": "traces", "resource spans": 1, "spans": 2}
+2026-09-25T16:45:07.008Z	info	ResourceSpans #0
+Resource SchemaURL: 
+Resource attributes:
+     -> telemetry.sdk.language: Str(python)
+     -> telemetry.sdk.name: Str(opentelemetry)
+     -> telemetry.sdk.version: Str(1.44.0)
+     -> service.instance.id: Str(908364eb-2407-4bf5-927d-380b3a691e4c)
+     -> service.name: Str(Test1)
+     -> w3.tracestate: Str(abc2=xyz2)
+ScopeSpans #0
+ScopeSpans SchemaURL: 
+InstrumentationScope putget.py 
+Span #0
+    Trace ID       : c7bff529e8467e9c269358a0aaf1a6a3
+    Parent ID      : 4322f411d9260d5c
+    ID             : f41c20c7867aa967
+    Name           : Put code
+    Kind           : Internal
+    Start time     : 2026-09-25 07:19:18.576705975 +0000 UTC
+    End time       : 2026-09-24 19:18:17.230000235 +0000 UTC
+    Status code    : Unset
+    Status message : 
+    DroppedAttributesCount: 0
+    DroppedEventsCount: 0
+    DroppedLinksCount: 0
+Attributes:
+     -> colin: Str(colin1)
+     -> colin2: Str(line58)
+     -> log.file.name: Str(input.json)
+Links:
+SpanLink #0
+     -> Trace ID: c7bff529e8467e9c269358a0aaf1a6a3
+     -> ID: e354fc09e2766640
+     -> TraceState: 
+     -> DroppedAttributesCount: 0
+Span #1
+    Trace ID       : c7bff529e8467e9c269358a0aaf1a6a3
+    Parent ID      : 
+    ID             : 4322f411d9260d5c
+    Name           : Payroll
+    Kind           : Internal
+    Start time     : 2026-09-25 07:19:18.576608211 +0000 UTC
+    End time       : 2026-09-24 19:18:17.230047474 +0000 UTC
+    Status code    : Unset
+    Status message : 
+    DroppedAttributesCount: 0
+    DroppedEventsCount: 0
+    DroppedLinksCount: 0
+Attributes:
+     -> log.file.name: Str(input.json)
+	{"resource": {"service.instance.id": "6555a4d4-f520-4a8c-9fe5-037ec37acab9", "service.name": "otelcol-contrib", "service.version": "0.156.0"}, "otelcol.component.id": "debug", "otelcol.component.kind": "exporter", "otelcol.signal": "traces"}
+2026-09-25T16:45:07.008Z	info	Traces	{"resource": {"service.instance.id": "6555a4d4-f520-4a8c-9fe5-037ec37acab9", "service.name": "otelcol-contrib", "service.version": "0.156.0"}, "otelcol.component.id": "debug", "otelcol.component.kind": "exporter", "otelcol.signal": "traces", "resource spans": 2, "spans": 8}
+2026-09-25T16:45:07.008Z	info	ResourceSpans #0
+Resource SchemaURL: 
+Resource attributes:
+     -> host.arch: Str(s390x)
+     -> host.name: Str(STD1.ibm.com)
+     -> os.description: Str(IBM z/OS 3.2)
+     -> os.name: Str(z/OS)
+     -> os.type: Str(z_os)
+     -> os.version: Str(03.02.00)
+     -> service.name: Str(CSQ9)
+     -> telemetry.sdk.language: Str(java)
+     -> telemetry.sdk.name: Str(opentelemetry)
+     -> telemetry.sdk.version: Str(1.55.0)
+ScopeSpans #0
+ScopeSpans SchemaURL: 
+InstrumentationScope z/OS OTel 1.4.3
+Span #0
+    Trace ID       : c7bff529e8467e9c269358a0aaf1a6a3
+    Parent ID      : e354fc09d52a46c0
+    ID             : e354fc09d5d916c0
+    Name           : MQPUT CSERVER
+    Kind           : Producer
+    Start time     : 2026-09-25 07:19:18.64274995 +0000 UTC
+    End time       : 2026-09-24 19:18:17.232796046 +0000 UTC
+    Status code    : Unset
+    Status message : 
+    DroppedAttributesCount: 0
+    DroppedEventsCount: 0
+    DroppedLinksCount: 0
+Attributes:
+     -> messaging.ibmmq.message.put_appl_type: Str(MQAT_UNIX)
+     -> messaging.operation.name: Str(MQPUT)
+     -> messaging.ibmmq.application.pid: Int(72)
+     -> os.type: Str(z_os)
+     -> messaging.ibmmq.destination.resolved_qmgr_name: Str(CSQ9)
+     -> messaging.ibmmq.destination.resolved_name: Str(CSERVER)
+     -> messaging.system: Str(ibmmq)
+     -> messaging.ibmmq.message.user_id: Str(COLIN)
+     -> messaging.ibmmq.message.put_appl_name: Str(python3.14)
+     -> messaging.ibmmq.application.name: Str(CSQ9CHIN)
+     -> service.version: Str(09.04.04.00)
+     -> messaging.ibmmq.application.reason_code: Str(MQRC_NONE)
+     -> log.file.name: Str(input.json)
+Links:
+SpanLink #0
+     -> Trace ID: c7bff529e8467e9c269358a0aaf1a6a3
+     -> ID: e354fc09d52a46c0
+     -> TraceState: 
+     -> DroppedAttributesCount: 0
+Span #1
+    Trace ID       : c7bff529e8467e9c269358a0aaf1a6a3
+    Parent ID      : e354fc09d5d916c0
+    ID             : e354fc09ddaec980
+    Name           : MQGET CSERVER
+    Kind           : Consumer
+    Start time     : 2026-09-25 07:19:18.674841122 +0000 UTC
+    End time       : 2026-09-24 19:18:17.263761578 +0000 UTC
+    Status code    : Unset
+    Status message : 
+    DroppedAttributesCount: 0
+    DroppedEventsCount: 0
+    DroppedLinksCount: 0
+Attributes:
+     -> messaging.operation.name: Str(MQGET)
+     -> messaging.ibmmq.destination.resolved_name: Str(CSERVER)
+     -> messaging.ibmmq.consumer.used_wait_interval: Int(68971)
+     -> messaging.ibmmq.application.pid: Int(56)
+     -> messaging.ibmmq.message.put_appl_type: Str(MQAT_UNIX)
+     -> messaging.ibmmq.message.user_id: Str(COLIN)
+     -> messaging.ibmmq.destination.resolved_qmgr_name: Str(CSQ9)
+     -> os.type: Str(z_os)
+     -> messaging.system: Str(ibmmq)
+     -> messaging.ibmmq.message.put_appl_name: Str(python3.14)
+     -> messaging.ibmmq.consumer.original_wait_interval: Int(200000)
+     -> messaging.ibmmq.application.name: Str(COLIN1)
+     -> service.version: Str(09.04.04.00)
+     -> messaging.ibmmq.application.reason_code: Str(MQRC_NONE)
+     -> log.file.name: Str(input.json)
+Links:
+SpanLink #0
+     -> Trace ID: c7bff529e8467e9c269358a0aaf1a6a3
+     -> ID: e354fc09d5d916c0
+     -> TraceState: 
+     -> DroppedAttributesCount: 0
+Span #2
+    Trace ID       : c7bff529e8467e9c269358a0aaf1a6a3
+    Parent ID      : e354fc09ddaec980
+    ID             : e354fc09e0c7cfc0
+    Name           : MQPUT1 CCOLIN
+    Kind           : Producer
+    Start time     : 2026-09-25 07:19:18.687529513 +0000 UTC
+    End time       : 2026-09-24 19:18:17.277698062 +0000 UTC
+    Status code    : Unset
+    Status message : 
+    DroppedAttributesCount: 0
+    DroppedEventsCount: 0
+    DroppedLinksCount: 0
+Attributes:
+     -> messaging.operation.name: Str(MQPUT1)
+     -> messaging.ibmmq.destination.resolved_name: Str(CCOLIN)
+     -> messaging.ibmmq.message.put_appl_name: Str(CSQ9)
+     -> service.version: Str(09.04.04.00)
+     -> messaging.ibmmq.destination.resolved_qmgr_name: Str(MQPA)
+     -> os.type: Str(z_os)
+     -> messaging.system: Str(ibmmq)
+     -> messaging.ibmmq.message.put_appl_type: Str(MQAT_QMGR)
+     -> messaging.ibmmq.message.user_id: Str(COLIN)
+     -> messaging.ibmmq.application.name: Str(COLIN1)
+     -> messaging.ibmmq.application.pid: Int(56)
+     -> messaging.ibmmq.application.reason_code: Str(MQRC_NONE)
+     -> log.file.name: Str(input.json)
+Links:
+SpanLink #0
+     -> Trace ID: c7bff529e8467e9c269358a0aaf1a6a3
+     -> ID: e354fc09ddaec980
+     -> TraceState: 
+     -> DroppedAttributesCount: 0
+Span #3
+    Trace ID       : c7bff529e8467e9c269358a0aaf1a6a3
+    Parent ID      : e354fc09e0c7cfc0
+    ID             : e354fc09e16c8e00
+    Name           : MQGET YMQPA
+    Kind           : Consumer
+    Start time     : 2026-09-25 07:19:18.690165404 +0000 UTC
+    End time       : 2026-09-24 19:18:17.279209312 +0000 UTC
+    Status code    : Unset
+    Status message : 
+    DroppedAttributesCount: 0
+    DroppedEventsCount: 0
+    DroppedLinksCount: 0
+Attributes:
+     -> messaging.ibmmq.application.reason_code: Str(MQRC_NONE)
+     -> os.type: Str(z_os)
+     -> messaging.ibmmq.consumer.used_wait_interval: Int(68982)
+     -> messaging.ibmmq.application.pid: Int(72)
+     -> messaging.ibmmq.destination.resolved_name: Str(YMQPA)
+     -> messaging.ibmmq.consumer.original_wait_interval: Int(299999)
+     -> messaging.ibmmq.destination.resolved_qmgr_name: Str(CSQ9)
+     -> messaging.ibmmq.message.put_appl_type: Str(MQAT_QMGR)
+     -> messaging.system: Str(ibmmq)
+     -> messaging.ibmmq.message.user_id: Str(COLIN)
+     -> messaging.ibmmq.message.put_appl_name: Str(CSQ9)
+     -> messaging.ibmmq.application.name: Str(CSQ9CHIN)
+     -> service.version: Str(09.04.04.00)
+     -> messaging.operation.name: Str(MQGET)
+     -> log.file.name: Str(input.json)
+Links:
+SpanLink #0
+     -> Trace ID: c7bff529e8467e9c269358a0aaf1a6a3
+     -> ID: e354fc09e0c7cfc0
+     -> TraceState: 
+     -> DroppedAttributesCount: 0
+ResourceSpans #1
+Resource SchemaURL: 
+Resource attributes:
+     -> host.arch: Str(s390x)
+     -> host.name: Str(STD1.ibm.com)
+     -> os.description: Str(IBM z/OS 3.2)
+     -> os.name: Str(z/OS)
+     -> os.type: Str(z_os)
+     -> os.version: Str(03.02.00)
+     -> service.name: Str(MQPA)
+     -> telemetry.sdk.language: Str(java)
+     -> telemetry.sdk.name: Str(opentelemetry)
+     -> telemetry.sdk.version: Str(1.55.0)
+ScopeSpans #0
+ScopeSpans SchemaURL: 
+InstrumentationScope z/OS OTel 1.4.3
+Span #0
+    Trace ID       : c7bff529e8467e9c269358a0aaf1a6a3
+    Parent ID      : f41c20c7867aa967
+    ID             : e354fc09d4c63700
+    Name           : MQPUT RSERVER
+    Kind           : Producer
+    Start time     : 2026-09-25 07:19:18.638351966 +0000 UTC
+    End time       : 2026-09-24 19:18:17.227855875 +0000 UTC
+    Status code    : Unset
+    Status message : 
+    DroppedAttributesCount: 0
+    DroppedEventsCount: 0
+    DroppedLinksCount: 0
+Attributes:
+     -> os.type: Str(z_os)
+     -> messaging.ibmmq.application.reason_code: Str(MQRC_NONE)
+     -> messaging.ibmmq.message.put_appl_name: Str(MQPA)
+     -> messaging.ibmmq.message.put_appl_type: Str(MQAT_QMGR)
+     -> messaging.ibmmq.destination.resolved_qmgr_name: Str(CSQ9)
+     -> messaging.ibmmq.destination.resolved_name: Str(CSERVER)
+     -> messaging.system: Str(ibmmq)
+     -> service.version: Str(09.04.04.00)
+     -> messaging.ibmmq.message.user_id: Str(COLIN)
+     -> messaging.ibmmq.application.name: Str(python3.14                  )
+     -> messaging.ibmmq.application.pid: Int(71)
+     -> messaging.operation.name: Str(MQPUT)
+     -> log.file.name: Str(input.json)
+Links:
+SpanLink #0
+     -> Trace ID: c7bff529e8467e9c269358a0aaf1a6a3
+     -> ID: f41c20c7867aa967
+     -> TraceState: 
+     -> DroppedAttributesCount: 0
+Span #1
+    Trace ID       : c7bff529e8467e9c269358a0aaf1a6a3
+    Parent ID      : e354fc09d4c63700
+    ID             : e354fc09d52a46c0
+    Name           : MQGET CSQ9
+    Kind           : Consumer
+    Start time     : 2026-09-25 07:19:18.63995295 +0000 UTC
+    End time       : 2026-09-24 19:18:17.228875546 +0000 UTC
+    Status code    : Unset
+    Status message : 
+    DroppedAttributesCount: 0
+    DroppedEventsCount: 0
+    DroppedLinksCount: 0
+Attributes:
+     -> messaging.ibmmq.application.reason_code: Str(MQRC_NONE)
+     -> os.type: Str(z_os)
+     -> messaging.ibmmq.consumer.used_wait_interval: Int(68981)
+     -> messaging.ibmmq.application.pid: Int(71)
+     -> messaging.ibmmq.destination.resolved_name: Str(CSQ9)
+     -> messaging.ibmmq.consumer.original_wait_interval: Int(299999)
+     -> messaging.ibmmq.destination.resolved_qmgr_name: Str(MQPA)
+     -> messaging.ibmmq.message.put_appl_type: Str(MQAT_QMGR)
+     -> messaging.system: Str(ibmmq)
+     -> messaging.ibmmq.message.user_id: Str(COLIN)
+     -> messaging.ibmmq.message.put_appl_name: Str(MQPA)
+     -> messaging.ibmmq.application.name: Str(MQPACHIN)
+     -> service.version: Str(09.04.04.00)
+     -> messaging.operation.name: Str(MQGET)
+     -> log.file.name: Str(input.json)
+Links:
+SpanLink #0
+     -> Trace ID: c7bff529e8467e9c269358a0aaf1a6a3
+     -> ID: e354fc09d4c63700
+     -> TraceState: 
+     -> DroppedAttributesCount: 0
+Span #2
+    Trace ID       : c7bff529e8467e9c269358a0aaf1a6a3
+    Parent ID      : e354fc09e16c8e00
+    ID             : e354fc09e1f790c0
+    Name           : MQPUT CCOLIN
+    Kind           : Producer
+    Start time     : 2026-09-25 07:19:18.692389575 +0000 UTC
+    End time       : 2026-09-24 19:18:17.282017531 +0000 UTC
+    Status code    : Unset
+    Status message : 
+    DroppedAttributesCount: 0
+    DroppedEventsCount: 0
+    DroppedLinksCount: 0
+Attributes:
+     -> messaging.ibmmq.message.put_appl_type: Str(MQAT_UNIX)
+     -> messaging.operation.name: Str(MQPUT)
+     -> messaging.ibmmq.application.pid: Int(71)
+     -> os.type: Str(z_os)
+     -> messaging.ibmmq.destination.resolved_qmgr_name: Str(MQPA)
+     -> messaging.ibmmq.destination.resolved_name: Str(CCOLIN)
+     -> messaging.system: Str(ibmmq)
+     -> messaging.ibmmq.message.user_id: Str(COLIN)
+     -> messaging.ibmmq.message.put_appl_name: Str(python3.14)
+     -> messaging.ibmmq.application.name: Str(MQPACHIN)
+     -> service.version: Str(09.04.04.00)
+     -> messaging.ibmmq.application.reason_code: Str(MQRC_NONE)
+     -> log.file.name: Str(input.json)
+Links:
+SpanLink #0
+     -> Trace ID: c7bff529e8467e9c269358a0aaf1a6a3
+     -> ID: e354fc09e16c8e00
+     -> TraceState: 
+     -> DroppedAttributesCount: 0
+Span #3
+    Trace ID       : c7bff529e8467e9c269358a0aaf1a6a3
+    Parent ID      : e354fc09e1f790c0
+    ID             : e354fc09e2766640
+    Name           : MQGET CCOLIN
+    Kind           : Consumer
+    Start time     : 2026-09-25 07:19:18.694418919 +0000 UTC
+    End time       : 2026-09-24 19:18:17.283285656 +0000 UTC
+    Status code    : Unset
+    Status message : 
+    DroppedAttributesCount: 0
+    DroppedEventsCount: 0
+    DroppedLinksCount: 0
+Attributes:
+     -> messaging.ibmmq.application.reason_code: Str(MQRC_NONE)
+     -> messaging.ibmmq.message.put_appl_name: Str(python3.14)
+     -> service.version: Str(09.04.04.00)
+     -> messaging.ibmmq.destination.resolved_name: Str(CCOLIN)
+     -> messaging.ibmmq.application.pid: Int(71)
+     -> messaging.ibmmq.destination.resolved_qmgr_name: Str(MQPA)
+     -> messaging.ibmmq.message.put_appl_type: Str(MQAT_UNIX)
+     -> messaging.system: Str(ibmmq)
+     -> messaging.operation.name: Str(MQGET)
+     -> messaging.ibmmq.message.user_id: Str(COLIN)
+     -> messaging.ibmmq.application.name: Str(python3.14                  )
+     -> os.type: Str(z_os)
+     -> log.file.name: Str(input.json)
+Links:
+SpanLink #0
+     -> Trace ID: c7bff529e8467e9c269358a0aaf1a6a3
+     -> ID: e354fc09e1f790c0
+     -> TraceState: 
+     -> DroppedAttributesCount: 0
+	{"resource": {"service.instance.id": "6555a4d4-f520-4a8c-9fe5-037ec37acab9", "service.name": "otelcol-contrib", "service.version": "0.156.0"}, "otelcol.component.id": "debug", "otelcol.component.kind": "exporter", "otelcol.signal": "traces"}
+2026-09-25T16:45:07.008Z	info	Traces	{"resource": {"service.instance.id": "6555a4d4-f520-4a8c-9fe5-037ec37acab9", "service.name": "otelcol-contrib", "service.version": "0.156.0"}, "otelcol.component.id": "debug", "otelcol.component.kind": "exporter", "otelcol.signal": "traces", "resource spans": 1, "spans": 2}
+2026-09-25T16:45:07.009Z	info	ResourceSpans #0
+Resource SchemaURL: 
+Resource attributes:
+     -> telemetry.sdk.language: Str(python)
+     -> telemetry.sdk.name: Str(opentelemetry)
+     -> telemetry.sdk.version: Str(1.44.0)
+     -> service.instance.id: Str(b6dfa0dc-e6ef-428c-a2a8-86c0a8312aff)
+     -> service.name: Str(Test1)
+     -> w3.tracestate: Str(abc2=xyz2)
+ScopeSpans #0
+ScopeSpans SchemaURL: 
+InstrumentationScope putget.py 
+Span #0
+    Trace ID       : e66cc25f489059afe43d6d87221fc391
+    Parent ID      : e39306f1ac42620d
+    ID             : ce7d31feb14e48e1
+    Name           : Put code
+    Kind           : Internal
+    Start time     : 2026-09-25 07:22:19.187010251 +0000 UTC
+    End time       : 2026-09-24 19:21:17.85059976 +0000 UTC
+    Status code    : Unset
+    Status message : 
+    DroppedAttributesCount: 0
+    DroppedEventsCount: 0
+    DroppedLinksCount: 0
+Attributes:
+     -> colin: Str(colin1)
+     -> colin2: Str(line58)
+     -> log.file.name: Str(input.json)
+Links:
+SpanLink #0
+     -> Trace ID: e66cc25f489059afe43d6d87221fc391
+     -> ID: e354fcb62357f840
+     -> TraceState: 
+     -> DroppedAttributesCount: 0
+Span #1
+    Trace ID       : e66cc25f489059afe43d6d87221fc391
+    Parent ID      : 
+    ID             : e39306f1ac42620d
+    Name           : Payroll
+    Kind           : Internal
+    Start time     : 2026-09-25 07:22:19.186954045 +0000 UTC
+    End time       : 2026-09-24 19:21:17.850634987 +0000 UTC
+    Status code    : Unset
+    Status message : 
+    DroppedAttributesCount: 0
+    DroppedEventsCount: 0
+    DroppedLinksCount: 0
+Attributes:
+     -> log.file.name: Str(input.json)
+	{"resource": {"service.instance.id": "6555a4d4-f520-4a8c-9fe5-037ec37acab9", "service.name": "otelcol-contrib", "service.version": "0.156.0"}, "otelcol.component.id": "debug", "otelcol.component.kind": "exporter", "otelcol.signal": "traces"}
+2026-09-25T16:45:07.009Z	info	Traces	{"resource": {"service.instance.id": "6555a4d4-f520-4a8c-9fe5-037ec37acab9", "service.name": "otelcol-contrib", "service.version": "0.156.0"}, "otelcol.component.id": "debug", "otelcol.component.kind": "exporter", "otelcol.signal": "traces", "resource spans": 2, "spans": 8}
+2026-09-25T16:45:07.010Z	info	ResourceSpans #0
+Resource SchemaURL: 
+Resource attributes:
+     -> host.arch: Str(s390x)
+     -> host.name: Str(STD1.ibm.com)
+     -> os.description: Str(IBM z/OS 3.2)
+     -> os.name: Str(z/OS)
+     -> os.type: Str(z_os)
+     -> os.version: Str(03.02.00)
+     -> service.name: Str(CSQ9)
+     -> telemetry.sdk.language: Str(java)
+     -> telemetry.sdk.name: Str(opentelemetry)
+     -> telemetry.sdk.version: Str(1.55.0)
+ScopeSpans #0
+ScopeSpans SchemaURL: 
+InstrumentationScope z/OS OTel 1.4.3
+Span #0
+    Trace ID       : e66cc25f489059afe43d6d87221fc391
+    Parent ID      : e354fcb61337a540
+    ID             : e354fcb613b42380
+    Name           : MQPUT CSERVER
+    Kind           : Producer
+    Start time     : 2026-09-25 07:22:19.251182747 +0000 UTC
+    End time       : 2026-09-24 19:21:17.841113921 +0000 UTC
+    Status code    : Unset
+    Status message : 
+    DroppedAttributesCount: 0
+    DroppedEventsCount: 0
+    DroppedLinksCount: 0
+Attributes:
+     -> messaging.ibmmq.message.put_appl_type: Str(MQAT_UNIX)
+     -> messaging.operation.name: Str(MQPUT)
+     -> messaging.ibmmq.application.pid: Int(72)
+     -> os.type: Str(z_os)
+     -> messaging.ibmmq.destination.resolved_qmgr_name: Str(CSQ9)
+     -> messaging.ibmmq.destination.resolved_name: Str(CSERVER)
+     -> messaging.system: Str(ibmmq)
+     -> messaging.ibmmq.message.user_id: Str(COLIN)
+     -> messaging.ibmmq.message.put_appl_name: Str(python3.14)
+     -> messaging.ibmmq.application.name: Str(CSQ9CHIN)
+     -> service.version: Str(09.04.04.00)
+     -> messaging.ibmmq.application.reason_code: Str(MQRC_NONE)
+     -> log.file.name: Str(input.json)
+Links:
+SpanLink #0
+     -> Trace ID: e66cc25f489059afe43d6d87221fc391
+     -> ID: e354fcb61337a540
+     -> TraceState: 
+     -> DroppedAttributesCount: 0
+Span #1
+    Trace ID       : e66cc25f489059afe43d6d87221fc391
+    Parent ID      : e354fcb613b42380
+    ID             : e354fcb61e5ebb40
+    Name           : MQGET CSERVER
+    Kind           : Consumer
+    Start time     : 2026-09-25 07:22:19.294872232 +0000 UTC
+    End time       : 2026-09-24 19:21:17.884028484 +0000 UTC
+    Status code    : Unset
+    Status message : 
+    DroppedAttributesCount: 0
+    DroppedEventsCount: 0
+    DroppedLinksCount: 0
+Attributes:
+     -> messaging.operation.name: Str(MQGET)
+     -> messaging.ibmmq.destination.resolved_name: Str(CSERVER)
+     -> messaging.ibmmq.consumer.used_wait_interval: Int(180606)
+     -> messaging.ibmmq.application.pid: Int(56)
+     -> messaging.ibmmq.message.put_appl_type: Str(MQAT_UNIX)
+     -> messaging.ibmmq.message.user_id: Str(COLIN)
+     -> messaging.ibmmq.destination.resolved_qmgr_name: Str(CSQ9)
+     -> os.type: Str(z_os)
+     -> messaging.system: Str(ibmmq)
+     -> messaging.ibmmq.message.put_appl_name: Str(python3.14)
+     -> messaging.ibmmq.consumer.original_wait_interval: Int(200000)
+     -> messaging.ibmmq.application.name: Str(COLIN1)
+     -> service.version: Str(09.04.04.00)
+     -> messaging.ibmmq.application.reason_code: Str(MQRC_NONE)
+     -> log.file.name: Str(input.json)
+Links:
+SpanLink #0
+     -> Trace ID: e66cc25f489059afe43d6d87221fc391
+     -> ID: e354fcb613b42380
+     -> TraceState: 
+     -> DroppedAttributesCount: 0
+Span #2
+    Trace ID       : e66cc25f489059afe43d6d87221fc391
+    Parent ID      : e354fcb61e5ebb40
+    ID             : e354fcb6218ce980
+    Name           : MQPUT1 CCOLIN
+    Kind           : Producer
+    Start time     : 2026-09-25 07:22:19.307899122 +0000 UTC
+    End time       : 2026-09-24 19:21:17.898232937 +0000 UTC
+    Status code    : Unset
+    Status message : 
+    DroppedAttributesCount: 0
+    DroppedEventsCount: 0
+    DroppedLinksCount: 0
+Attributes:
+     -> messaging.operation.name: Str(MQPUT1)
+     -> messaging.ibmmq.destination.resolved_name: Str(CCOLIN)
+     -> messaging.ibmmq.message.put_appl_name: Str(CSQ9)
+     -> service.version: Str(09.04.04.00)
+     -> messaging.ibmmq.destination.resolved_qmgr_name: Str(MQPA)
+     -> os.type: Str(z_os)
+     -> messaging.system: Str(ibmmq)
+     -> messaging.ibmmq.message.put_appl_type: Str(MQAT_QMGR)
+     -> messaging.ibmmq.message.user_id: Str(COLIN)
+     -> messaging.ibmmq.application.name: Str(COLIN1)
+     -> messaging.ibmmq.application.pid: Int(56)
+     -> messaging.ibmmq.application.reason_code: Str(MQRC_NONE)
+     -> log.file.name: Str(input.json)
+Links:
+SpanLink #0
+     -> Trace ID: e66cc25f489059afe43d6d87221fc391
+     -> ID: e354fcb61e5ebb40
+     -> TraceState: 
+     -> DroppedAttributesCount: 0
+Span #3
+    Trace ID       : e66cc25f489059afe43d6d87221fc391
+    Parent ID      : e354fcb6218ce980
+    ID             : e354fcb6223fde00
+    Name           : MQGET YMQPA
+    Kind           : Consumer
+    Start time     : 2026-09-25 07:22:19.310762404 +0000 UTC
+    End time       : 2026-09-24 19:21:17.900047093 +0000 UTC
+    Status code    : Unset
+    Status message : 
+    DroppedAttributesCount: 0
+    DroppedEventsCount: 0
+    DroppedLinksCount: 0
+Attributes:
+     -> messaging.ibmmq.application.reason_code: Str(MQRC_NONE)
+     -> os.type: Str(z_os)
+     -> messaging.ibmmq.consumer.used_wait_interval: Int(180613)
+     -> messaging.ibmmq.application.pid: Int(72)
+     -> messaging.ibmmq.destination.resolved_name: Str(YMQPA)
+     -> messaging.ibmmq.consumer.original_wait_interval: Int(300000)
+     -> messaging.ibmmq.destination.resolved_qmgr_name: Str(CSQ9)
+     -> messaging.ibmmq.message.put_appl_type: Str(MQAT_QMGR)
+     -> messaging.system: Str(ibmmq)
+     -> messaging.ibmmq.message.user_id: Str(COLIN)
+     -> messaging.ibmmq.message.put_appl_name: Str(CSQ9)
+     -> messaging.ibmmq.application.name: Str(CSQ9CHIN)
+     -> service.version: Str(09.04.04.00)
+     -> messaging.operation.name: Str(MQGET)
+     -> log.file.name: Str(input.json)
+Links:
+SpanLink #0
+     -> Trace ID: e66cc25f489059afe43d6d87221fc391
+     -> ID: e354fcb6218ce980
+     -> TraceState: 
+     -> DroppedAttributesCount: 0
+ResourceSpans #1
+Resource SchemaURL: 
+Resource attributes:
+     -> host.arch: Str(s390x)
+     -> host.name: Str(STD1.ibm.com)
+     -> os.description: Str(IBM z/OS 3.2)
+     -> os.name: Str(z/OS)
+     -> os.type: Str(z_os)
+     -> os.version: Str(03.02.00)
+     -> service.name: Str(MQPA)
+     -> telemetry.sdk.language: Str(java)
+     -> telemetry.sdk.name: Str(opentelemetry)
+     -> telemetry.sdk.version: Str(1.55.0)
+ScopeSpans #0
+ScopeSpans SchemaURL: 
+InstrumentationScope z/OS OTel 1.4.3
+Span #0
+    Trace ID       : e66cc25f489059afe43d6d87221fc391
+    Parent ID      : ce7d31feb14e48e1
+    ID             : e354fcb612db2300
+    Name           : MQPUT RSERVER
+    Kind           : Producer
+    Start time     : 2026-09-25 07:22:19.247710716 +0000 UTC
+    End time       : 2026-09-24 19:21:17.837059234 +0000 UTC
+    Status code    : Unset
+    Status message : 
+    DroppedAttributesCount: 0
+    DroppedEventsCount: 0
+    DroppedLinksCount: 0
+Attributes:
+     -> os.type: Str(z_os)
+     -> messaging.ibmmq.application.reason_code: Str(MQRC_NONE)
+     -> messaging.ibmmq.message.put_appl_name: Str(MQPA)
+     -> messaging.ibmmq.message.put_appl_type: Str(MQAT_QMGR)
+     -> messaging.ibmmq.destination.resolved_qmgr_name: Str(CSQ9)
+     -> messaging.ibmmq.destination.resolved_name: Str(CSERVER)
+     -> messaging.system: Str(ibmmq)
+     -> service.version: Str(09.04.04.00)
+     -> messaging.ibmmq.message.user_id: Str(COLIN)
+     -> messaging.ibmmq.application.name: Str(python3.14                  )
+     -> messaging.ibmmq.application.pid: Int(71)
+     -> messaging.operation.name: Str(MQPUT)
+     -> log.file.name: Str(input.json)
+Links:
+SpanLink #0
+     -> Trace ID: e66cc25f489059afe43d6d87221fc391
+     -> ID: ce7d31feb14e48e1
+     -> TraceState: 
+     -> DroppedAttributesCount: 0
+Span #1
+    Trace ID       : e66cc25f489059afe43d6d87221fc391
+    Parent ID      : e354fcb612db2300
+    ID             : e354fcb61337a540
+    Name           : MQGET CSQ9
+    Kind           : Consumer
+    Start time     : 2026-09-25 07:22:19.249190857 +0000 UTC
+    End time       : 2026-09-24 19:21:17.838192703 +0000 UTC
+    Status code    : Unset
+    Status message : 
+    DroppedAttributesCount: 0
+    DroppedEventsCount: 0
+    DroppedLinksCount: 0
+Attributes:
+     -> messaging.ibmmq.application.reason_code: Str(MQRC_NONE)
+     -> os.type: Str(z_os)
+     -> messaging.ibmmq.consumer.used_wait_interval: Int(180603)
+     -> messaging.ibmmq.application.pid: Int(71)
+     -> messaging.ibmmq.destination.resolved_name: Str(CSQ9)
+     -> messaging.ibmmq.consumer.original_wait_interval: Int(299997)
+     -> messaging.ibmmq.destination.resolved_qmgr_name: Str(MQPA)
+     -> messaging.ibmmq.message.put_appl_type: Str(MQAT_QMGR)
+     -> messaging.system: Str(ibmmq)
+     -> messaging.ibmmq.message.user_id: Str(COLIN)
+     -> messaging.ibmmq.message.put_appl_name: Str(MQPA)
+     -> messaging.ibmmq.application.name: Str(MQPACHIN)
+     -> service.version: Str(09.04.04.00)
+     -> messaging.operation.name: Str(MQGET)
+     -> log.file.name: Str(input.json)
+Links:
+SpanLink #0
+     -> Trace ID: e66cc25f489059afe43d6d87221fc391
+     -> ID: e354fcb612db2300
+     -> TraceState: 
+     -> DroppedAttributesCount: 0
+Span #2
+    Trace ID       : e66cc25f489059afe43d6d87221fc391
+    Parent ID      : e354fcb6223fde00
+    ID             : e354fcb622df2c00
+    Name           : MQPUT CCOLIN
+    Kind           : Producer
+    Start time     : 2026-09-25 07:22:19.313311279 +0000 UTC
+    End time       : 2026-09-24 19:21:17.902973421 +0000 UTC
+    Status code    : Unset
+    Status message : 
+    DroppedAttributesCount: 0
+    DroppedEventsCount: 0
+    DroppedLinksCount: 0
+Attributes:
+     -> messaging.ibmmq.message.put_appl_type: Str(MQAT_UNIX)
+     -> messaging.operation.name: Str(MQPUT)
+     -> messaging.ibmmq.application.pid: Int(71)
+     -> os.type: Str(z_os)
+     -> messaging.ibmmq.destination.resolved_qmgr_name: Str(MQPA)
+     -> messaging.ibmmq.destination.resolved_name: Str(CCOLIN)
+     -> messaging.system: Str(ibmmq)
+     -> messaging.ibmmq.message.user_id: Str(COLIN)
+     -> messaging.ibmmq.message.put_appl_name: Str(python3.14)
+     -> messaging.ibmmq.application.name: Str(MQPACHIN)
+     -> service.version: Str(09.04.04.00)
+     -> messaging.ibmmq.application.reason_code: Str(MQRC_NONE)
+     -> log.file.name: Str(input.json)
+Links:
+SpanLink #0
+     -> Trace ID: e66cc25f489059afe43d6d87221fc391
+     -> ID: e354fcb6223fde00
+     -> TraceState: 
+     -> DroppedAttributesCount: 0
+Span #3
+    Trace ID       : e66cc25f489059afe43d6d87221fc391
+    Parent ID      : e354fcb622df2c00
+    ID             : e354fcb62357f840
+    Name           : MQGET CCOLIN
+    Kind           : Consumer
+    Start time     : 2026-09-25 07:22:19.315244044 +0000 UTC
+    End time       : 2026-09-24 19:21:17.904111296 +0000 UTC
+    Status code    : Unset
+    Status message : 
+    DroppedAttributesCount: 0
+    DroppedEventsCount: 0
+    DroppedLinksCount: 0
+Attributes:
+     -> messaging.ibmmq.application.reason_code: Str(MQRC_NONE)
+     -> messaging.ibmmq.message.put_appl_name: Str(python3.14)
+     -> service.version: Str(09.04.04.00)
+     -> messaging.ibmmq.destination.resolved_name: Str(CCOLIN)
+     -> messaging.ibmmq.application.pid: Int(71)
+     -> messaging.ibmmq.destination.resolved_qmgr_name: Str(MQPA)
+     -> messaging.ibmmq.message.put_appl_type: Str(MQAT_UNIX)
+     -> messaging.system: Str(ibmmq)
+     -> messaging.operation.name: Str(MQGET)
+     -> messaging.ibmmq.message.user_id: Str(COLIN)
+     -> messaging.ibmmq.application.name: Str(python3.14                  )
+     -> os.type: Str(z_os)
+     -> log.file.name: Str(input.json)
+Links:
+SpanLink #0
+     -> Trace ID: e66cc25f489059afe43d6d87221fc391
+     -> ID: e354fcb622df2c00
+     -> TraceState: 
+     -> DroppedAttributesCount: 0
+	{"resource": {"service.instance.id": "6555a4d4-f520-4a8c-9fe5-037ec37acab9", "service.name": "otelcol-contrib", "service.version": "0.156.0"}, "otelcol.component.id": "debug", "otelcol.component.kind": "exporter", "otelcol.signal": "traces"}
+2026-09-25T16:45:07.010Z	info	Traces	{"resource": {"service.instance.id": "6555a4d4-f520-4a8c-9fe5-037ec37acab9", "service.name": "otelcol-contrib", "service.version": "0.156.0"}, "otelcol.component.id": "debug", "otelcol.component.kind": "exporter", "otelcol.signal": "traces", "resource spans": 1, "spans": 2}
+2026-09-25T16:45:07.010Z	info	ResourceSpans #0
+Resource SchemaURL: 
+Resource attributes:
+     -> telemetry.sdk.language: Str(python)
+     -> telemetry.sdk.name: Str(opentelemetry)
+     -> telemetry.sdk.version: Str(1.44.0)
+     -> service.instance.id: Str(6581a1f2-3f42-41cc-a1f6-58b5ec0ac448)
+     -> service.name: Str(Test1)
+     -> w3.tracestate: Str(abc2=xyz2)
+ScopeSpans #0
+ScopeSpans SchemaURL: 
+InstrumentationScope putget.py 
+Span #0
+    Trace ID       : ad2e292e032d463f291636b31d48f45c
+    Parent ID      : 30521ed905563736
+    ID             : 7605ff2f80d838b1
+    Name           : Put code
+    Kind           : Internal
+    Start time     : 2026-09-25 07:24:18.098690797 +0000 UTC
+    End time       : 2026-09-24 19:23:16.739705801 +0000 UTC
+    Status code    : Unset
+    Status message : 
+    DroppedAttributesCount: 0
+    DroppedEventsCount: 0
+    DroppedLinksCount: 0
+Attributes:
+     -> colin: Str(colin1)
+     -> colin2: Str(line58)
+     -> log.file.name: Str(input.json)
+Links:
+SpanLink #0
+     -> Trace ID: ad2e292e032d463f291636b31d48f45c
+     -> ID: e354fd278501b900
+     -> TraceState: 
+     -> DroppedAttributesCount: 0
+Span #1
+    Trace ID       : ad2e292e032d463f291636b31d48f45c
+    Parent ID      : 
+    ID             : 30521ed905563736
+    Name           : Payroll
+    Kind           : Internal
+    Start time     : 2026-09-25 07:24:18.098590558 +0000 UTC
+    End time       : 2026-09-24 19:23:16.739742571 +0000 UTC
+    Status code    : Unset
+    Status message : 
+    DroppedAttributesCount: 0
+    DroppedEventsCount: 0
+    DroppedLinksCount: 0
+Attributes:
+     -> log.file.name: Str(input.json)
+	{"resource": {"service.instance.id": "6555a4d4-f520-4a8c-9fe5-037ec37acab9", "service.name": "otelcol-contrib", "service.version": "0.156.0"}, "otelcol.component.id": "debug", "otelcol.component.kind": "exporter", "otelcol.signal": "traces"}
+2026-09-25T16:45:07.056Z	info	ResourceSpans #0
+Resource SchemaURL: 
+Resource attributes:
+     -> host.arch: Str(s390x)
+     -> host.name: Str(STD1.ibm.com)
+     -> os.description: Str(IBM z/OS 3.2)
+     -> os.name: Str(z/OS)
+     -> os.type: Str(z_os)
+     -> os.version: Str(03.02.00)
+     -> service.name: Str(CSQ9)
+     -> telemetry.sdk.language: Str(java)
+     -> telemetry.sdk.name: Str(opentelemetry)
+     -> telemetry.sdk.version: Str(1.55.0)
+ScopeSpans #0
+ScopeSpans SchemaURL: 
+InstrumentationScope z/OS OTel 1.4.3
+Span #0
+    Trace ID       : ad2e292e032d463f291636b31d48f45c
+    Parent ID      : e354fd277a77c540
+    ID             : e354fd277b163a00
+    Name           : MQPUT CSERVER
+    Kind           : Producer
+    Start time     : 2026-09-25 07:24:18.163728154 +0000 UTC
+    End time       : 2026-09-24 19:23:16.753498968 +0000 UTC
+    Status code    : Unset
+    Status message : 
+    DroppedAttributesCount: 0
+    DroppedEventsCount: 0
+    DroppedLinksCount: 0
+Attributes:
+     -> messaging.ibmmq.message.put_appl_type: Str(MQAT_UNIX)
+     -> messaging.operation.name: Str(MQPUT)
+     -> messaging.ibmmq.application.pid: Int(72)
+     -> os.type: Str(z_os)
+     -> messaging.ibmmq.destination.resolved_qmgr_name: Str(CSQ9)
+     -> messaging.ibmmq.destination.resolved_name: Str(CSERVER)
+     -> messaging.system: Str(ibmmq)
+     -> messaging.ibmmq.message.user_id: Str(COLIN)
+     -> messaging.ibmmq.message.put_appl_name: Str(python3.14)
+     -> messaging.ibmmq.application.name: Str(CSQ9CHIN)
+     -> service.version: Str(09.04.04.00)
+     -> messaging.ibmmq.application.reason_code: Str(MQRC_NONE)
+     -> log.file.name: Str(input.json)
+Links:
+SpanLink #0
+     -> Trace ID: ad2e292e032d463f291636b31d48f45c
+     -> ID: e354fd277a77c540
+     -> TraceState: 
+     -> DroppedAttributesCount: 0
+Span #1
+    Trace ID       : ad2e292e032d463f291636b31d48f45c
+    Parent ID      : e354fd277b163a00
+    ID             : e354fd278097d880
+    Name           : MQGET CSERVER
+    Kind           : Consumer
+    Start time     : 2026-09-25 07:24:18.18628206 +0000 UTC
+    End time       : 2026-09-24 19:23:16.775203734 +0000 UTC
+    Status code    : Unset
+    Status message : 
+    DroppedAttributesCount: 0
+    DroppedEventsCount: 0
+    DroppedLinksCount: 0
+Attributes:
+     -> messaging.operation.name: Str(MQGET)
+     -> messaging.ibmmq.destination.resolved_name: Str(CSERVER)
+     -> messaging.ibmmq.consumer.used_wait_interval: Int(118876)
+     -> messaging.ibmmq.application.pid: Int(56)
+     -> messaging.ibmmq.message.put_appl_type: Str(MQAT_UNIX)
+     -> messaging.ibmmq.message.user_id: Str(COLIN)
+     -> messaging.ibmmq.destination.resolved_qmgr_name: Str(CSQ9)
+     -> os.type: Str(z_os)
+     -> messaging.system: Str(ibmmq)
+     -> messaging.ibmmq.message.put_appl_name: Str(python3.14)
+     -> messaging.ibmmq.consumer.original_wait_interval: Int(200000)
+     -> messaging.ibmmq.application.name: Str(COLIN1)
+     -> service.version: Str(09.04.04.00)
+     -> messaging.ibmmq.application.reason_code: Str(MQRC_NONE)
+     -> log.file.name: Str(input.json)
+Links:
+SpanLink #0
+     -> Trace ID: ad2e292e032d463f291636b31d48f45c
+     -> ID: e354fd277b163a00
+     -> TraceState: 
+     -> DroppedAttributesCount: 0
+Span #2
+    Trace ID       : ad2e292e032d463f291636b31d48f45c
+    Parent ID      : e354fd278097d880
+    ID             : e354fd27839b0500
+    Name           : MQPUT1 CCOLIN
+    Kind           : Producer
+    Start time     : 2026-09-25 07:24:18.198620841 +0000 UTC
+    End time       : 2026-09-24 19:23:16.78873625 +0000 UTC
+    Status code    : Unset
+    Status message : 
+    DroppedAttributesCount: 0
+    DroppedEventsCount: 0
+    DroppedLinksCount: 0
+Attributes:
+     -> messaging.operation.name: Str(MQPUT1)
+     -> messaging.ibmmq.destination.resolved_name: Str(CCOLIN)
+     -> messaging.ibmmq.message.put_appl_name: Str(CSQ9)
+     -> service.version: Str(09.04.04.00)
+     -> messaging.ibmmq.destination.resolved_qmgr_name: Str(MQPA)
+     -> os.type: Str(z_os)
+     -> messaging.system: Str(ibmmq)
+     -> messaging.ibmmq.message.put_appl_type: Str(MQAT_QMGR)
+     -> messaging.ibmmq.message.user_id: Str(COLIN)
+     -> messaging.ibmmq.application.name: Str(COLIN1)
+     -> messaging.ibmmq.application.pid: Int(56)
+     -> messaging.ibmmq.application.reason_code: Str(MQRC_NONE)
+     -> log.file.name: Str(input.json)
+Links:
+SpanLink #0
+     -> Trace ID: ad2e292e032d463f291636b31d48f45c
+     -> ID: e354fd278097d880
+     -> TraceState: 
+     -> DroppedAttributesCount: 0
+Span #3
+    Trace ID       : ad2e292e032d463f291636b31d48f45c
+    Parent ID      : e354fd27839b0500
+    ID             : e354fd278428c4c0
+    Name           : MQGET YMQPA
+    Kind           : Consumer
+    Start time     : 2026-09-25 07:24:18.200888825 +0000 UTC
+    End time       : 2026-09-24 19:23:16.789764812 +0000 UTC
+    Status code    : Unset
+    Status message : 
+    DroppedAttributesCount: 0
+    DroppedEventsCount: 0
+    DroppedLinksCount: 0
+Attributes:
+     -> messaging.ibmmq.application.reason_code: Str(MQRC_NONE)
+     -> os.type: Str(z_os)
+     -> messaging.ibmmq.consumer.used_wait_interval: Int(118885)
+     -> messaging.ibmmq.application.pid: Int(72)
+     -> messaging.ibmmq.destination.resolved_name: Str(YMQPA)
+     -> messaging.ibmmq.consumer.original_wait_interval: Int(299998)
+     -> messaging.ibmmq.destination.resolved_qmgr_name: Str(CSQ9)
+     -> messaging.ibmmq.message.put_appl_type: Str(MQAT_QMGR)
+     -> messaging.system: Str(ibmmq)
+     -> messaging.ibmmq.message.user_id: Str(COLIN)
+     -> messaging.ibmmq.message.put_appl_name: Str(CSQ9)
+     -> messaging.ibmmq.application.name: Str(CSQ9CHIN)
+     -> service.version: Str(09.04.04.00)
+     -> messaging.operation.name: Str(MQGET)
+     -> log.file.name: Str(input.json)
+Links:
+SpanLink #0
+     -> Trace ID: ad2e292e032d463f291636b31d48f45c
+     -> ID: e354fd27839b0500
+     -> TraceState: 
+     -> DroppedAttributesCount: 0
+ResourceSpans #1
+Resource SchemaURL: 
+Resource attributes:
+     -> host.arch: Str(s390x)
+     -> host.name: Str(STD1.ibm.com)
+     -> os.description: Str(IBM z/OS 3.2)
+     -> os.name: Str(z/OS)
+     -> os.type: Str(z_os)
+     -> os.version: Str(03.02.00)
+     -> service.name: Str(MQPA)
+     -> telemetry.sdk.language: Str(java)
+     -> telemetry.sdk.name: Str(opentelemetry)
+     -> telemetry.sdk.version: Str(1.55.0)
+ScopeSpans #0
+ScopeSpans SchemaURL: 
+InstrumentationScope z/OS OTel 1.4.3
+Span #0
+    Trace ID       : ad2e292e032d463f291636b31d48f45c
+    Parent ID      : 7605ff2f80d838b1
+    ID             : e354fd277a0351c0
+    Name           : MQPUT RSERVER
+    Kind           : Producer
+    Start time     : 2026-09-25 07:24:18.159329638 +0000 UTC
+    End time       : 2026-09-24 19:23:16.748667093 +0000 UTC
+    Status code    : Unset
+    Status message : 
+    DroppedAttributesCount: 0
+    DroppedEventsCount: 0
+    DroppedLinksCount: 0
+Attributes:
+     -> os.type: Str(z_os)
+     -> messaging.ibmmq.application.reason_code: Str(MQRC_NONE)
+     -> messaging.ibmmq.message.put_appl_name: Str(MQPA)
+     -> messaging.ibmmq.message.put_appl_type: Str(MQAT_QMGR)
+     -> messaging.ibmmq.destination.resolved_qmgr_name: Str(CSQ9)
+     -> messaging.ibmmq.destination.resolved_name: Str(CSERVER)
+     -> messaging.system: Str(ibmmq)
+     -> service.version: Str(09.04.04.00)
+     -> messaging.ibmmq.message.user_id: Str(COLIN)
+     -> messaging.ibmmq.application.name: Str(python3.14                  )
+     -> messaging.ibmmq.application.pid: Int(71)
+     -> messaging.operation.name: Str(MQPUT)
+     -> log.file.name: Str(input.json)
+Links:
+SpanLink #0
+     -> Trace ID: ad2e292e032d463f291636b31d48f45c
+     -> ID: 7605ff2f80d838b1
+     -> TraceState: 
+     -> DroppedAttributesCount: 0
+Span #1
+    Trace ID       : ad2e292e032d463f291636b31d48f45c
+    Parent ID      : e354fd277a0351c0
+    ID             : e354fd277a77c540
+    Name           : MQGET CSQ9
+    Kind           : Consumer
+    Start time     : 2026-09-25 07:24:18.161192857 +0000 UTC
+    End time       : 2026-09-24 19:23:16.750139187 +0000 UTC
+    Status code    : Unset
+    Status message : 
+    DroppedAttributesCount: 0
+    DroppedEventsCount: 0
+    DroppedLinksCount: 0
+Attributes:
+     -> messaging.ibmmq.application.reason_code: Str(MQRC_NONE)
+     -> os.type: Str(z_os)
+     -> messaging.ibmmq.consumer.used_wait_interval: Int(118907)
+     -> messaging.ibmmq.application.pid: Int(71)
+     -> messaging.ibmmq.destination.resolved_name: Str(CSQ9)
+     -> messaging.ibmmq.consumer.original_wait_interval: Int(299998)
+     -> messaging.ibmmq.destination.resolved_qmgr_name: Str(MQPA)
+     -> messaging.ibmmq.message.put_appl_type: Str(MQAT_QMGR)
+     -> messaging.system: Str(ibmmq)
+     -> messaging.ibmmq.message.user_id: Str(COLIN)
+     -> messaging.ibmmq.message.put_appl_name: Str(MQPA)
+     -> messaging.ibmmq.application.name: Str(MQPACHIN)
+     -> service.version: Str(09.04.04.00)
+     -> messaging.operation.name: Str(MQGET)
+     -> log.file.name: Str(input.json)
+Links:
+SpanLink #0
+     -> Trace ID: ad2e292e032d463f291636b31d48f45c
+     -> ID: e354fd277a0351c0
+     -> TraceState: 
+     -> DroppedAttributesCount: 0
+Span #2
+    Trace ID       : ad2e292e032d463f291636b31d48f45c
+    Parent ID      : e354fd278428c4c0
+    ID             : e354fd2784888300
+    Name           : MQPUT CCOLIN
+    Kind           : Producer
+    Start time     : 2026-09-25 07:24:18.202420716 +0000 UTC
+    End time       : 2026-09-24 19:23:16.792030343 +0000 UTC
+    Status code    : Unset
+    Status message : 
+    DroppedAttributesCount: 0
+    DroppedEventsCount: 0
+    DroppedLinksCount: 0
+Attributes:
+     -> messaging.ibmmq.message.put_appl_type: Str(MQAT_UNIX)
+     -> messaging.operation.name: Str(MQPUT)
+     -> messaging.ibmmq.application.pid: Int(71)
+     -> os.type: Str(z_os)
+     -> messaging.ibmmq.destination.resolved_qmgr_name: Str(MQPA)
+     -> messaging.ibmmq.destination.resolved_name: Str(CCOLIN)
+     -> messaging.system: Str(ibmmq)
+     -> messaging.ibmmq.message.user_id: Str(COLIN)
+     -> messaging.ibmmq.message.put_appl_name: Str(python3.14)
+     -> messaging.ibmmq.application.name: Str(MQPACHIN)
+     -> service.version: Str(09.04.04.00)
+     -> messaging.ibmmq.application.reason_code: Str(MQRC_NONE)
+     -> log.file.name: Str(input.json)
+Links:
+SpanLink #0
+     -> Trace ID: ad2e292e032d463f291636b31d48f45c
+     -> ID: e354fd278428c4c0
+     -> TraceState: 
+     -> DroppedAttributesCount: 0
+Span #3
+    Trace ID       : ad2e292e032d463f291636b31d48f45c
+    Parent ID      : e354fd2784888300
+    ID             : e354fd278501b900
+    Name           : MQGET CCOLIN
+    Kind           : Consumer
+    Start time     : 2026-09-25 07:24:18.204360091 +0000 UTC
+    End time       : 2026-09-24 19:23:16.793230531 +0000 UTC
+    Status code    : Unset
+    Status message : 
+    DroppedAttributesCount: 0
+    DroppedEventsCount: 0
+    DroppedLinksCount: 0
+Attributes:
+     -> messaging.ibmmq.application.reason_code: Str(MQRC_NONE)
+     -> messaging.ibmmq.message.put_appl_name: Str(python3.14)
+     -> service.version: Str(09.04.04.00)
+     -> messaging.ibmmq.destination.resolved_name: Str(CCOLIN)
+     -> messaging.ibmmq.application.pid: Int(71)
+     -> messaging.ibmmq.destination.resolved_qmgr_name: Str(MQPA)
+     -> messaging.ibmmq.message.put_appl_type: Str(MQAT_UNIX)
+     -> messaging.system: Str(ibmmq)
+     -> messaging.operation.name: Str(MQGET)
+     -> messaging.ibmmq.message.user_id: Str(COLIN)
+     -> messaging.ibmmq.application.name: Str(python3.14                  )
+     -> os.type: Str(z_os)
+     -> log.file.name: Str(input.json)
+Links:
+SpanLink #0
+     -> Trace ID: ad2e292e032d463f291636b31d48f45c
+     -> ID: e354fd2784888300
+     -> TraceState: 
+     -> DroppedAttributesCount: 0
+	{"resource": {"service.instance.id": "6555a4d4-f520-4a8c-9fe5-037ec37acab9", "service.name": "otelcol-contrib", "service.version": "0.156.0"}, "otelcol.component.id": "debug", "otelcol.component.kind": "exporter", "otelcol.signal": "traces"}
+2026-09-25T16:45:07.056Z	info	ResourceSpans #0
+Resource SchemaURL: 
+Resource attributes:
+     -> telemetry.sdk.language: Str(python)
+     -> telemetry.sdk.name: Str(opentelemetry)
+     -> telemetry.sdk.version: Str(1.44.0)
+     -> service.instance.id: Str(7e653f48-c25b-452c-8d68-88fbb92841d6)
+     -> service.name: Str(Test1)
+     -> w3.tracestate: Str(abc2=xyz2)
+ScopeSpans #0
+ScopeSpans SchemaURL: 
+InstrumentationScope putget.py 
+Span #0
+    Trace ID       : 1bbd6763a8db672962148964443d5fc7
+    Parent ID      : a4476160246dadfe
+    ID             : 9b4050c2012c8528
+    Name           : Put code
+    Kind           : Internal
+    Start time     : 2026-09-25 07:27:00.840680351 +0000 UTC
+    End time       : 2026-09-24 19:25:59.481695306 +0000 UTC
+    Status code    : Unset
+    Status message : 
+    DroppedAttributesCount: 0
+    DroppedEventsCount: 0
+    DroppedLinksCount: 0
+Attributes:
+     -> colin: Str(colin1)
+     -> colin2: Str(line58)
+     -> log.file.name: Str(input.json)
+Links:
+SpanLink #0
+     -> Trace ID: 1bbd6763a8db672962148964443d5fc7
+     -> ID: e354fdc2b8ec76c0
+     -> TraceState: 
+     -> DroppedAttributesCount: 0
+Span #1
+    Trace ID       : 1bbd6763a8db672962148964443d5fc7
+    Parent ID      : 
+    ID             : a4476160246dadfe
+    Name           : Payroll
+    Kind           : Internal
+    Start time     : 2026-09-25 07:27:00.840572878 +0000 UTC
+    End time       : 2026-09-24 19:25:59.481731004 +0000 UTC
+    Status code    : Unset
+    Status message : 
+    DroppedAttributesCount: 0
+    DroppedEventsCount: 0
+    DroppedLinksCount: 0
+Attributes:
+     -> log.file.name: Str(input.json)
+	{"resource": {"service.instance.id": "6555a4d4-f520-4a8c-9fe5-037ec37acab9", "service.name": "otelcol-contrib", "service.version": "0.156.0"}, "otelcol.component.id": "debug", "otelcol.component.kind": "exporter", "otelcol.signal": "traces"}
+2026-09-25T16:45:07.056Z	info	ResourceSpans #0
+Resource SchemaURL: 
+Resource attributes:
+     -> host.arch: Str(s390x)
+     -> host.name: Str(STD1.ibm.com)
+     -> os.description: Str(IBM z/OS 3.2)
+     -> os.name: Str(z/OS)
+     -> os.type: Str(z_os)
+     -> os.version: Str(03.02.00)
+     -> service.name: Str(CSQ9)
+     -> telemetry.sdk.language: Str(java)
+     -> telemetry.sdk.name: Str(opentelemetry)
+     -> telemetry.sdk.version: Str(1.55.0)
+ScopeSpans #0
+ScopeSpans SchemaURL: 
+InstrumentationScope z/OS OTel 1.4.3
+Span #0
+    Trace ID       : 1bbd6763a8db672962148964443d5fc7
+    Parent ID      : e354fdc2aeb4cfc0
+    ID             : e354fdc2af5d52c0
+    Name           : MQPUT CSERVER
+    Kind           : Producer
+    Start time     : 2026-09-25 07:27:00.9071377 +0000 UTC
+    End time       : 2026-09-24 19:25:59.496995125 +0000 UTC
+    Status code    : Unset
+    Status message : 
+    DroppedAttributesCount: 0
+    DroppedEventsCount: 0
+    DroppedLinksCount: 0
+Attributes:
+     -> messaging.ibmmq.message.put_appl_type: Str(MQAT_UNIX)
+     -> messaging.operation.name: Str(MQPUT)
+     -> messaging.ibmmq.application.pid: Int(72)
+     -> os.type: Str(z_os)
+     -> messaging.ibmmq.destination.resolved_qmgr_name: Str(CSQ9)
+     -> messaging.ibmmq.destination.resolved_name: Str(CSERVER)
+     -> messaging.system: Str(ibmmq)
+     -> messaging.ibmmq.message.user_id: Str(COLIN)
+     -> messaging.ibmmq.message.put_appl_name: Str(python3.14)
+     -> messaging.ibmmq.application.name: Str(CSQ9CHIN)
+     -> service.version: Str(09.04.04.00)
+     -> messaging.ibmmq.application.reason_code: Str(MQRC_NONE)
+     -> log.file.name: Str(input.json)
+Links:
+SpanLink #0
+     -> Trace ID: 1bbd6763a8db672962148964443d5fc7
+     -> ID: e354fdc2aeb4cfc0
+     -> TraceState: 
+     -> DroppedAttributesCount: 0
+Span #1
+    Trace ID       : 1bbd6763a8db672962148964443d5fc7
+    Parent ID      : e354fdc2af5d52c0
+    ID             : e354fdc2b45923c0
+    Name           : MQGET CSERVER
+    Kind           : Consumer
+    Start time     : 2026-09-25 07:27:00.927550763 +0000 UTC
+    End time       : 2026-09-24 19:25:59.51649989 +0000 UTC
+    Status code    : Unset
+    Status message : 
+    DroppedAttributesCount: 0
+    DroppedEventsCount: 0
+    DroppedLinksCount: 0
+Attributes:
+     -> messaging.operation.name: Str(MQGET)
+     -> messaging.ibmmq.destination.resolved_name: Str(CSERVER)
+     -> messaging.ibmmq.consumer.used_wait_interval: Int(162727)
+     -> messaging.ibmmq.application.pid: Int(56)
+     -> messaging.ibmmq.message.put_appl_type: Str(MQAT_UNIX)
+     -> messaging.ibmmq.message.user_id: Str(COLIN)
+     -> messaging.ibmmq.destination.resolved_qmgr_name: Str(CSQ9)
+     -> os.type: Str(z_os)
+     -> messaging.system: Str(ibmmq)
+     -> messaging.ibmmq.message.put_appl_name: Str(python3.14)
+     -> messaging.ibmmq.consumer.original_wait_interval: Int(200000)
+     -> messaging.ibmmq.application.name: Str(COLIN1)
+     -> service.version: Str(09.04.04.00)
+     -> messaging.ibmmq.application.reason_code: Str(MQRC_NONE)
+     -> log.file.name: Str(input.json)
+Links:
+SpanLink #0
+     -> Trace ID: 1bbd6763a8db672962148964443d5fc7
+     -> ID: e354fdc2af5d52c0
+     -> TraceState: 
+     -> DroppedAttributesCount: 0
+Span #2
+    Trace ID       : 1bbd6763a8db672962148964443d5fc7
+    Parent ID      : e354fdc2b45923c0
+    ID             : e354fdc2b75e8800
+    Name           : MQPUT1 CCOLIN
+    Kind           : Producer
+    Start time     : 2026-09-25 07:27:00.939925029 +0000 UTC
+    End time       : 2026-09-24 19:25:59.529902671 +0000 UTC
+    Status code    : Unset
+    Status message : 
+    DroppedAttributesCount: 0
+    DroppedEventsCount: 0
+    DroppedLinksCount: 0
+Attributes:
+     -> messaging.operation.name: Str(MQPUT1)
+     -> messaging.ibmmq.destination.resolved_name: Str(CCOLIN)
+     -> messaging.ibmmq.message.put_appl_name: Str(CSQ9)
+     -> service.version: Str(09.04.04.00)
+     -> messaging.ibmmq.destination.resolved_qmgr_name: Str(MQPA)
+     -> os.type: Str(z_os)
+     -> messaging.system: Str(ibmmq)
+     -> messaging.ibmmq.message.put_appl_type: Str(MQAT_QMGR)
+     -> messaging.ibmmq.message.user_id: Str(COLIN)
+     -> messaging.ibmmq.application.name: Str(COLIN1)
+     -> messaging.ibmmq.application.pid: Int(56)
+     -> messaging.ibmmq.application.reason_code: Str(MQRC_NONE)
+     -> log.file.name: Str(input.json)
+Links:
+SpanLink #0
+     -> Trace ID: 1bbd6763a8db672962148964443d5fc7
+     -> ID: e354fdc2b45923c0
+     -> TraceState: 
+     -> DroppedAttributesCount: 0
+Span #3
+    Trace ID       : 1bbd6763a8db672962148964443d5fc7
+    Parent ID      : e354fdc2b75e8800
+    ID             : e354fdc2b7fbf6c0
+    Name           : MQGET YMQPA
+    Kind           : Consumer
+    Start time     : 2026-09-25 07:27:00.94244395 +0000 UTC
+    End time       : 2026-09-24 19:25:59.531589515 +0000 UTC
+    Status code    : Unset
+    Status message : 
+    DroppedAttributesCount: 0
+    DroppedEventsCount: 0
+    DroppedLinksCount: 0
+Attributes:
+     -> messaging.ibmmq.application.reason_code: Str(MQRC_NONE)
+     -> os.type: Str(z_os)
+     -> messaging.ibmmq.consumer.used_wait_interval: Int(162738)
+     -> messaging.ibmmq.application.pid: Int(72)
+     -> messaging.ibmmq.destination.resolved_name: Str(YMQPA)
+     -> messaging.ibmmq.consumer.original_wait_interval: Int(299998)
+     -> messaging.ibmmq.destination.resolved_qmgr_name: Str(CSQ9)
+     -> messaging.ibmmq.message.put_appl_type: Str(MQAT_QMGR)
+     -> messaging.system: Str(ibmmq)
+     -> messaging.ibmmq.message.user_id: Str(COLIN)
+     -> messaging.ibmmq.message.put_appl_name: Str(CSQ9)
+     -> messaging.ibmmq.application.name: Str(CSQ9CHIN)
+     -> service.version: Str(09.04.04.00)
+     -> messaging.operation.name: Str(MQGET)
+     -> log.file.name: Str(input.json)
+Links:
+SpanLink #0
+     -> Trace ID: 1bbd6763a8db672962148964443d5fc7
+     -> ID: e354fdc2b75e8800
+     -> TraceState: 
+     -> DroppedAttributesCount: 0
+ResourceSpans #1
+Resource SchemaURL: 
+Resource attributes:
+     -> host.arch: Str(s390x)
+     -> host.name: Str(STD1.ibm.com)
+     -> os.description: Str(IBM z/OS 3.2)
+     -> os.name: Str(z/OS)
+     -> os.type: Str(z_os)
+     -> os.version: Str(03.02.00)
+     -> service.name: Str(MQPA)
+     -> telemetry.sdk.language: Str(java)
+     -> telemetry.sdk.name: Str(opentelemetry)
+     -> telemetry.sdk.version: Str(1.55.0)
+ScopeSpans #0
+ScopeSpans SchemaURL: 
+InstrumentationScope z/OS OTel 1.4.3
+Span #0
+    Trace ID       : 1bbd6763a8db672962148964443d5fc7
+    Parent ID      : 9b4050c2012c8528
+    ID             : e354fdc2ae114800
+    Name           : MQPUT RSERVER
+    Kind           : Producer
+    Start time     : 2026-09-25 07:27:00.901825029 +0000 UTC
+    End time       : 2026-09-24 19:25:59.491873593 +0000 UTC
+    Status code    : Unset
+    Status message : 
+    DroppedAttributesCount: 0
+    DroppedEventsCount: 0
+    DroppedLinksCount: 0
+Attributes:
+     -> os.type: Str(z_os)
+     -> messaging.ibmmq.application.reason_code: Str(MQRC_NONE)
+     -> messaging.ibmmq.message.put_appl_name: Str(MQPA)
+     -> messaging.ibmmq.message.put_appl_type: Str(MQAT_QMGR)
+     -> messaging.ibmmq.destination.resolved_qmgr_name: Str(CSQ9)
+     -> messaging.ibmmq.destination.resolved_name: Str(CSERVER)
+     -> messaging.system: Str(ibmmq)
+     -> service.version: Str(09.04.04.00)
+     -> messaging.ibmmq.message.user_id: Str(COLIN)
+     -> messaging.ibmmq.application.name: Str(python3.14                  )
+     -> messaging.ibmmq.application.pid: Int(71)
+     -> messaging.operation.name: Str(MQPUT)
+     -> log.file.name: Str(input.json)
+Links:
+SpanLink #0
+     -> Trace ID: 1bbd6763a8db672962148964443d5fc7
+     -> ID: 9b4050c2012c8528
+     -> TraceState: 
+     -> DroppedAttributesCount: 0
+Span #1
+    Trace ID       : 1bbd6763a8db672962148964443d5fc7
+    Parent ID      : e354fdc2ae114800
+    ID             : e354fdc2aeb4cfc0
+    Name           : MQGET CSQ9
+    Kind           : Consumer
+    Start time     : 2026-09-25 07:27:00.904441513 +0000 UTC
+    End time       : 2026-09-24 19:25:59.493421921 +0000 UTC
+    Status code    : Unset
+    Status message : 
+    DroppedAttributesCount: 0
+    DroppedEventsCount: 0
+    DroppedLinksCount: 0
+Attributes:
+     -> messaging.ibmmq.application.reason_code: Str(MQRC_NONE)
+     -> os.type: Str(z_os)
+     -> messaging.ibmmq.consumer.used_wait_interval: Int(162738)
+     -> messaging.ibmmq.application.pid: Int(71)
+     -> messaging.ibmmq.destination.resolved_name: Str(CSQ9)
+     -> messaging.ibmmq.consumer.original_wait_interval: Int(299998)
+     -> messaging.ibmmq.destination.resolved_qmgr_name: Str(MQPA)
+     -> messaging.ibmmq.message.put_appl_type: Str(MQAT_QMGR)
+     -> messaging.system: Str(ibmmq)
+     -> messaging.ibmmq.message.user_id: Str(COLIN)
+     -> messaging.ibmmq.message.put_appl_name: Str(MQPA)
+     -> messaging.ibmmq.application.name: Str(MQPACHIN)
+     -> service.version: Str(09.04.04.00)
+     -> messaging.operation.name: Str(MQGET)
+     -> log.file.name: Str(input.json)
+Links:
+SpanLink #0
+     -> Trace ID: 1bbd6763a8db672962148964443d5fc7
+     -> ID: e354fdc2ae114800
+     -> TraceState: 
+     -> DroppedAttributesCount: 0
+Span #2
+    Trace ID       : 1bbd6763a8db672962148964443d5fc7
+    Parent ID      : e354fdc2b7fbf6c0
+    ID             : e354fdc2b866ce40
+    Name           : MQPUT CCOLIN
+    Kind           : Producer
+    Start time     : 2026-09-25 07:27:00.944153419 +0000 UTC
+    End time       : 2026-09-24 19:25:59.533875546 +0000 UTC
+    Status code    : Unset
+    Status message : 
+    DroppedAttributesCount: 0
+    DroppedEventsCount: 0
+    DroppedLinksCount: 0
+Attributes:
+     -> messaging.ibmmq.message.put_appl_type: Str(MQAT_UNIX)
+     -> messaging.operation.name: Str(MQPUT)
+     -> messaging.ibmmq.application.pid: Int(71)
+     -> os.type: Str(z_os)
+     -> messaging.ibmmq.destination.resolved_qmgr_name: Str(MQPA)
+     -> messaging.ibmmq.destination.resolved_name: Str(CCOLIN)
+     -> messaging.system: Str(ibmmq)
+     -> messaging.ibmmq.message.user_id: Str(COLIN)
+     -> messaging.ibmmq.message.put_appl_name: Str(python3.14)
+     -> messaging.ibmmq.application.name: Str(MQPACHIN)
+     -> service.version: Str(09.04.04.00)
+     -> messaging.ibmmq.application.reason_code: Str(MQRC_NONE)
+     -> log.file.name: Str(input.json)
+Links:
+SpanLink #0
+     -> Trace ID: 1bbd6763a8db672962148964443d5fc7
+     -> ID: e354fdc2b7fbf6c0
+     -> TraceState: 
+     -> DroppedAttributesCount: 0
+Span #3
+    Trace ID       : 1bbd6763a8db672962148964443d5fc7
+    Parent ID      : e354fdc2b866ce40
+    ID             : e354fdc2b8ec76c0
+    Name           : MQGET CCOLIN
+    Kind           : Consumer
+    Start time     : 2026-09-25 07:27:00.94629195 +0000 UTC
+    End time       : 2026-09-24 19:25:59.535171859 +0000 UTC
+    Status code    : Unset
+    Status message : 
+    DroppedAttributesCount: 0
+    DroppedEventsCount: 0
+    DroppedLinksCount: 0
+Attributes:
+     -> messaging.ibmmq.application.reason_code: Str(MQRC_NONE)
+     -> messaging.ibmmq.message.put_appl_name: Str(python3.14)
+     -> service.version: Str(09.04.04.00)
+     -> messaging.ibmmq.destination.resolved_name: Str(CCOLIN)
+     -> messaging.ibmmq.application.pid: Int(71)
+     -> messaging.ibmmq.destination.resolved_qmgr_name: Str(MQPA)
+     -> messaging.ibmmq.message.put_appl_type: Str(MQAT_UNIX)
+     -> messaging.system: Str(ibmmq)
+     -> messaging.operation.name: Str(MQGET)
+     -> messaging.ibmmq.message.user_id: Str(COLIN)
+     -> messaging.ibmmq.application.name: Str(python3.14                  )
+     -> os.type: Str(z_os)
+     -> log.file.name: Str(input.json)
+Links:
+SpanLink #0
+     -> Trace ID: 1bbd6763a8db672962148964443d5fc7
+     -> ID: e354fdc2b866ce40
+     -> TraceState: 
+     -> DroppedAttributesCount: 0
+	{"resource": {"service.instance.id": "6555a4d4-f520-4a8c-9fe5-037ec37acab9", "service.name": "otelcol-contrib", "service.version": "0.156.0"}, "otelcol.component.id": "debug", "otelcol.component.kind": "exporter", "otelcol.signal": "traces"}
+2026-09-25T16:45:07.057Z	info	ResourceSpans #0
+Resource SchemaURL: 
+Resource attributes:
+     -> telemetry.sdk.language: Str(python)
+     -> telemetry.sdk.name: Str(opentelemetry)
+     -> telemetry.sdk.version: Str(1.44.0)
+     -> service.instance.id: Str(d4002e87-1f94-4681-9816-6dbae232979f)
+     -> service.name: Str(Test1)
+     -> w3.tracestate: Str(abc2=xyz2)
+ScopeSpans #0
+ScopeSpans SchemaURL: 
+InstrumentationScope putget.py 
+Span #0
+    Trace ID       : 148b5ef19bcadebadb3e82f7aca47b18
+    Parent ID      : 219630bba7177085
+    ID             : 9701d3395abcb957
+    Name           : Put code
+    Kind           : Internal
+    Start time     : 2026-09-25 07:28:01.32192918 +0000 UTC
+    End time       : 2026-09-24 19:26:59.966749528 +0000 UTC
+    Status code    : Unset
+    Status message : 
+    DroppedAttributesCount: 0
+    DroppedEventsCount: 0
+    DroppedLinksCount: 0
+Attributes:
+     -> colin: Str(colin1)
+     -> colin2: Str(line58)
+     -> log.file.name: Str(input.json)
+Span #1
+    Trace ID       : 148b5ef19bcadebadb3e82f7aca47b18
+    Parent ID      : 
+    ID             : 219630bba7177085
+    Name           : Payroll
+    Kind           : Internal
+    Start time     : 2026-09-25 07:28:01.321604346 +0000 UTC
+    End time       : 2026-09-24 19:26:59.966797979 +0000 UTC
+    Status code    : Unset
+    Status message : 
+    DroppedAttributesCount: 0
+    DroppedEventsCount: 0
+    DroppedLinksCount: 0
+Attributes:
+     -> log.file.name: Str(input.json)
+	{"resource": {"service.instance.id": "6555a4d4-f520-4a8c-9fe5-037ec37acab9", "service.name": "otelcol-contrib", "service.version": "0.156.0"}, "otelcol.component.id": "debug", "otelcol.component.kind": "exporter", "otelcol.signal": "traces"}
+2026-09-25T16:45:07.057Z	info	ResourceSpans #0
+Resource SchemaURL: 
+Resource attributes:
+     -> telemetry.sdk.language: Str(python)
+     -> telemetry.sdk.name: Str(opentelemetry)
+     -> telemetry.sdk.version: Str(1.44.0)
+     -> service.instance.id: Str(3431347c-9649-4ea6-8737-3afab780579b)
+     -> service.name: Str(Test1)
+     -> w3.tracestate: Str(abc2=xyz2)
+ScopeSpans #0
+ScopeSpans SchemaURL: 
+InstrumentationScope putget.py 
+Span #0
+    Trace ID       : c5dcc0bf1c77965f2a661a70ff3838fd
+    Parent ID      : 5a27f8bd24606b37
+    ID             : c5f93d60489e4914
+    Name           : Put code
+    Kind           : Internal
+    Start time     : 2026-09-25 07:30:33.68158685 +0000 UTC
+    End time       : 2026-09-24 19:29:32.311053488 +0000 UTC
+    Status code    : Unset
+    Status message : 
+    DroppedAttributesCount: 0
+    DroppedEventsCount: 0
+    DroppedLinksCount: 0
+Attributes:
+     -> colin: Str(colin1)
+     -> colin2: Str(line58)
+     -> log.file.name: Str(input.json)
+Span #1
+    Trace ID       : c5dcc0bf1c77965f2a661a70ff3838fd
+    Parent ID      : 
+    ID             : 5a27f8bd24606b37
+    Name           : Payroll
+    Kind           : Internal
+    Start time     : 2026-09-25 07:30:33.681520915 +0000 UTC
+    End time       : 2026-09-24 19:29:32.311119753 +0000 UTC
+    Status code    : Unset
+    Status message : 
+    DroppedAttributesCount: 0
+    DroppedEventsCount: 0
+    DroppedLinksCount: 0
+Attributes:
+     -> log.file.name: Str(input.json)
+	{"resource": {"service.instance.id": "6555a4d4-f520-4a8c-9fe5-037ec37acab9", "service.name": "otelcol-contrib", "service.version": "0.156.0"}, "otelcol.component.id": "debug", "otelcol.component.kind": "exporter", "otelcol.signal": "traces"}
+2026-09-25T16:45:07.057Z	info	ResourceSpans #0
+Resource SchemaURL: 
+Resource attributes:
+     -> host.arch: Str(s390x)
+     -> host.name: Str(STD1.ibm.com)
+     -> os.description: Str(IBM z/OS 3.2)
+     -> os.name: Str(z/OS)
+     -> os.type: Str(z_os)
+     -> os.version: Str(03.02.00)
+     -> service.name: Str(CSQ9)
+     -> telemetry.sdk.language: Str(java)
+     -> telemetry.sdk.name: Str(opentelemetry)
+     -> telemetry.sdk.version: Str(1.55.0)
+ScopeSpans #0
+ScopeSpans SchemaURL: 
+InstrumentationScope z/OS OTel 1.4.3
+Span #0
+    Trace ID       : c5dcc0bf1c77965f2a661a70ff3838fd
+    Parent ID      : e354fe8da98b84c0
+    ID             : e354fe8daa158140
+    Name           : MQPUT CSERVER
+    Kind           : Producer
+    Start time     : 2026-09-25 07:30:33.746436607 +0000 UTC
+    End time       : 2026-09-24 19:29:32.336150031 +0000 UTC
+    Status code    : Unset
+    Status message : 
+    DroppedAttributesCount: 0
+    DroppedEventsCount: 0
+    DroppedLinksCount: 0
+Attributes:
+     -> messaging.ibmmq.message.put_appl_type: Str(MQAT_UNIX)
+     -> messaging.operation.name: Str(MQPUT)
+     -> messaging.ibmmq.application.pid: Int(72)
+     -> os.type: Str(z_os)
+     -> messaging.ibmmq.destination.resolved_qmgr_name: Str(CSQ9)
+     -> w3.tracestate: Str(zz88=MODEL)
+     -> messaging.ibmmq.destination.resolved_name: Str(CSERVER)
+     -> messaging.system: Str(ibmmq)
+     -> messaging.ibmmq.message.user_id: Str(COLIN)
+     -> messaging.ibmmq.message.put_appl_name: Str(python3.14)
+     -> messaging.ibmmq.application.name: Str(CSQ9CHIN)
+     -> service.version: Str(09.04.04.00)
+     -> messaging.ibmmq.application.reason_code: Str(MQRC_NONE)
+     -> log.file.name: Str(input.json)
+Links:
+SpanLink #0
+     -> Trace ID: c5dcc0bf1c77965f2a661a70ff3838fd
+     -> ID: e354fe8da98b84c0
+     -> TraceState: 
+     -> DroppedAttributesCount: 0
+Span #1
+    Trace ID       : c5dcc0bf1c77965f2a661a70ff3838fd
+    Parent ID      : e354fe8daa158140
+    ID             : e354fe8dac405980
+    Name           : MQGET CSERVER
+    Kind           : Consumer
+    Start time     : 2026-09-25 07:30:33.755314122 +0000 UTC
+    End time       : 2026-09-24 19:29:32.344427406 +0000 UTC
+    Status code    : Unset
+    Status message : 
+    DroppedAttributesCount: 0
+    DroppedEventsCount: 0
+    DroppedLinksCount: 0
+Attributes:
+     -> messaging.operation.name: Str(MQGET)
+     -> messaging.ibmmq.destination.resolved_name: Str(CSERVER)
+     -> messaging.ibmmq.consumer.used_wait_interval: Int(152328)
+     -> messaging.ibmmq.application.pid: Int(56)
+     -> messaging.ibmmq.message.put_appl_type: Str(MQAT_UNIX)
+     -> messaging.ibmmq.message.user_id: Str(COLIN)
+     -> messaging.ibmmq.destination.resolved_qmgr_name: Str(CSQ9)
+     -> w3.tracestate: Str(zz88=MODEL)
+     -> os.type: Str(z_os)
+     -> messaging.system: Str(ibmmq)
+     -> messaging.ibmmq.message.put_appl_name: Str(python3.14)
+     -> messaging.ibmmq.consumer.original_wait_interval: Int(200000)
+     -> messaging.ibmmq.application.name: Str(COLIN1)
+     -> service.version: Str(09.04.04.00)
+     -> messaging.ibmmq.application.reason_code: Str(MQRC_NONE)
+     -> log.file.name: Str(input.json)
+Links:
+SpanLink #0
+     -> Trace ID: c5dcc0bf1c77965f2a661a70ff3838fd
+     -> ID: e354fe8daa158140
+     -> TraceState: 
+     -> DroppedAttributesCount: 0
+Span #2
+    Trace ID       : c5dcc0bf1c77965f2a661a70ff3838fd
+    Parent ID      : e354fe8dac405980
+    ID             : e354fe8dafa43140
+    Name           : MQPUT1 CCOLIN
+    Kind           : Producer
+    Start time     : 2026-09-25 07:30:33.769199607 +0000 UTC
+    End time       : 2026-09-24 19:29:32.35940039 +0000 UTC
+    Status code    : Unset
+    Status message : 
+    DroppedAttributesCount: 0
+    DroppedEventsCount: 0
+    DroppedLinksCount: 0
+Attributes:
+     -> messaging.operation.name: Str(MQPUT1)
+     -> messaging.ibmmq.destination.resolved_name: Str(CCOLIN)
+     -> messaging.ibmmq.message.put_appl_name: Str(CSQ9)
+     -> service.version: Str(09.04.04.00)
+     -> messaging.ibmmq.destination.resolved_qmgr_name: Str(MQPA)
+     -> w3.tracestate: Str(zz88=MODEL)
+     -> os.type: Str(z_os)
+     -> messaging.system: Str(ibmmq)
+     -> messaging.ibmmq.message.put_appl_type: Str(MQAT_QMGR)
+     -> messaging.ibmmq.message.user_id: Str(COLIN)
+     -> messaging.ibmmq.application.name: Str(COLIN1)
+     -> messaging.ibmmq.application.pid: Int(56)
+     -> messaging.ibmmq.application.reason_code: Str(MQRC_NONE)
+     -> log.file.name: Str(input.json)
+Links:
+SpanLink #0
+     -> Trace ID: c5dcc0bf1c77965f2a661a70ff3838fd
+     -> ID: e354fe8dac405980
+     -> TraceState: 
+     -> DroppedAttributesCount: 0
+Span #3
+    Trace ID       : c5dcc0bf1c77965f2a661a70ff3838fd
+    Parent ID      : e354fe8dafa43140
+    ID             : e354fe8db059dc00
+    Name           : MQGET YMQPA
+    Kind           : Consumer
+    Start time     : 2026-09-25 07:30:33.772106279 +0000 UTC
+    End time       : 2026-09-24 19:29:32.36099825 +0000 UTC
+    Status code    : Unset
+    Status message : 
+    DroppedAttributesCount: 0
+    DroppedEventsCount: 0
+    DroppedLinksCount: 0
+Attributes:
+     -> messaging.ibmmq.application.reason_code: Str(MQRC_NONE)
+     -> os.type: Str(z_os)
+     -> messaging.ibmmq.consumer.used_wait_interval: Int(152339)
+     -> messaging.ibmmq.application.pid: Int(72)
+     -> messaging.ibmmq.destination.resolved_name: Str(YMQPA)
+     -> messaging.ibmmq.consumer.original_wait_interval: Int(299998)
+     -> messaging.ibmmq.destination.resolved_qmgr_name: Str(CSQ9)
+     -> w3.tracestate: Str(zz88=MODEL)
+     -> messaging.ibmmq.message.put_appl_type: Str(MQAT_QMGR)
+     -> messaging.system: Str(ibmmq)
+     -> messaging.ibmmq.message.user_id: Str(COLIN)
+     -> messaging.ibmmq.message.put_appl_name: Str(CSQ9)
+     -> messaging.ibmmq.application.name: Str(CSQ9CHIN)
+     -> service.version: Str(09.04.04.00)
+     -> messaging.operation.name: Str(MQGET)
+     -> log.file.name: Str(input.json)
+Links:
+SpanLink #0
+     -> Trace ID: c5dcc0bf1c77965f2a661a70ff3838fd
+     -> ID: e354fe8dafa43140
+     -> TraceState: 
+     -> DroppedAttributesCount: 0
+ResourceSpans #1
+Resource SchemaURL: 
+Resource attributes:
+     -> host.arch: Str(s390x)
+     -> host.name: Str(STD1.ibm.com)
+     -> os.description: Str(IBM z/OS 3.2)
+     -> os.name: Str(z/OS)
+     -> os.type: Str(z_os)
+     -> os.version: Str(03.02.00)
+     -> service.name: Str(MQPA)
+     -> telemetry.sdk.language: Str(java)
+     -> telemetry.sdk.name: Str(opentelemetry)
+     -> telemetry.sdk.version: Str(1.55.0)
+ScopeSpans #0
+ScopeSpans SchemaURL: 
+InstrumentationScope z/OS OTel 1.4.3
+Span #0
+    Trace ID       : c5dcc0bf1c77965f2a661a70ff3838fd
+    Parent ID      : 5a27f8bd24606b37
+    ID             : e354fe8da9123740
+    Name           : MQPUT RSERVER
+    Kind           : Producer
+    Start time     : 2026-09-25 07:30:33.742287982 +0000 UTC
+    End time       : 2026-09-24 19:29:32.331670078 +0000 UTC
+    Status code    : Unset
+    Status message : 
+    DroppedAttributesCount: 0
+    DroppedEventsCount: 0
+    DroppedLinksCount: 0
+Attributes:
+     -> os.type: Str(z_os)
+     -> messaging.ibmmq.application.reason_code: Str(MQRC_NONE)
+     -> messaging.ibmmq.message.put_appl_name: Str(MQPA)
+     -> messaging.ibmmq.message.put_appl_type: Str(MQAT_QMGR)
+     -> messaging.ibmmq.destination.resolved_qmgr_name: Str(CSQ9)
+     -> w3.tracestate: Str(zz88=MODEL)
+     -> messaging.ibmmq.destination.resolved_name: Str(CSERVER)
+     -> messaging.system: Str(ibmmq)
+     -> service.version: Str(09.04.04.00)
+     -> messaging.ibmmq.message.user_id: Str(COLIN)
+     -> messaging.ibmmq.application.name: Str(python3.14                  )
+     -> messaging.ibmmq.application.pid: Int(71)
+     -> messaging.operation.name: Str(MQPUT)
+     -> log.file.name: Str(input.json)
+Links:
+SpanLink #0
+     -> Trace ID: c5dcc0bf1c77965f2a661a70ff3838fd
+     -> ID: 5a27f8bd24606b37
+     -> TraceState: 
+     -> DroppedAttributesCount: 0
+Span #1
+    Trace ID       : c5dcc0bf1c77965f2a661a70ff3838fd
+    Parent ID      : e354fe8da9123740
+    ID             : e354fe8da98b84c0
+    Name           : MQGET CSQ9
+    Kind           : Consumer
+    Start time     : 2026-09-25 07:30:33.744228825 +0000 UTC
+    End time       : 2026-09-24 19:29:32.333176078 +0000 UTC
+    Status code    : Unset
+    Status message : 
+    DroppedAttributesCount: 0
+    DroppedEventsCount: 0
+    DroppedLinksCount: 0
+Attributes:
+     -> messaging.ibmmq.application.reason_code: Str(MQRC_NONE)
+     -> os.type: Str(z_os)
+     -> messaging.ibmmq.consumer.used_wait_interval: Int(152353)
+     -> messaging.ibmmq.application.pid: Int(71)
+     -> messaging.ibmmq.destination.resolved_name: Str(CSQ9)
+     -> messaging.ibmmq.consumer.original_wait_interval: Int(299999)
+     -> messaging.ibmmq.destination.resolved_qmgr_name: Str(MQPA)
+     -> w3.tracestate: Str(zz88=MODEL)
+     -> messaging.ibmmq.message.put_appl_type: Str(MQAT_QMGR)
+     -> messaging.system: Str(ibmmq)
+     -> messaging.ibmmq.message.user_id: Str(COLIN)
+     -> messaging.ibmmq.message.put_appl_name: Str(MQPA)
+     -> messaging.ibmmq.application.name: Str(MQPACHIN)
+     -> service.version: Str(09.04.04.00)
+     -> messaging.operation.name: Str(MQGET)
+     -> log.file.name: Str(input.json)
+Links:
+SpanLink #0
+     -> Trace ID: c5dcc0bf1c77965f2a661a70ff3838fd
+     -> ID: e354fe8da9123740
+     -> TraceState: 
+     -> DroppedAttributesCount: 0
+Span #2
+    Trace ID       : c5dcc0bf1c77965f2a661a70ff3838fd
+    Parent ID      : e354fe8db059dc00
+    ID             : e354fe8db0c05e80
+    Name           : MQPUT CCOLIN
+    Kind           : Producer
+    Start time     : 2026-09-25 07:30:33.773746435 +0000 UTC
+    End time       : 2026-09-24 19:29:32.363452187 +0000 UTC
+    Status code    : Unset
+    Status message : 
+    DroppedAttributesCount: 0
+    DroppedEventsCount: 0
+    DroppedLinksCount: 0
+Attributes:
+     -> messaging.ibmmq.message.put_appl_type: Str(MQAT_UNIX)
+     -> messaging.operation.name: Str(MQPUT)
+     -> messaging.ibmmq.application.pid: Int(71)
+     -> os.type: Str(z_os)
+     -> messaging.ibmmq.destination.resolved_qmgr_name: Str(MQPA)
+     -> w3.tracestate: Str(zz88=MODEL)
+     -> messaging.ibmmq.destination.resolved_name: Str(CCOLIN)
+     -> messaging.system: Str(ibmmq)
+     -> messaging.ibmmq.message.user_id: Str(COLIN)
+     -> messaging.ibmmq.message.put_appl_name: Str(python3.14)
+     -> messaging.ibmmq.application.name: Str(MQPACHIN)
+     -> service.version: Str(09.04.04.00)
+     -> messaging.ibmmq.application.reason_code: Str(MQRC_NONE)
+     -> log.file.name: Str(input.json)
+Links:
+SpanLink #0
+     -> Trace ID: c5dcc0bf1c77965f2a661a70ff3838fd
+     -> ID: e354fe8db059dc00
+     -> TraceState: 
+     -> DroppedAttributesCount: 0
+Span #3
+    Trace ID       : c5dcc0bf1c77965f2a661a70ff3838fd
+    Parent ID      : e354fe8db0c05e80
+    ID             : e354fe8db13f3c80
+    Name           : MQGET CCOLIN
+    Kind           : Consumer
+    Start time     : 2026-09-25 07:30:33.77577631 +0000 UTC
+    End time       : 2026-09-24 19:29:32.364830937 +0000 UTC
+    Status code    : Unset
+    Status message : 
+    DroppedAttributesCount: 0
+    DroppedEventsCount: 0
+    DroppedLinksCount: 0
+Attributes:
+     -> messaging.ibmmq.application.reason_code: Str(MQRC_NONE)
+     -> messaging.ibmmq.message.put_appl_name: Str(python3.14)
+     -> service.version: Str(09.04.04.00)
+     -> messaging.ibmmq.destination.resolved_name: Str(CCOLIN)
+     -> messaging.ibmmq.application.pid: Int(71)
+     -> messaging.ibmmq.destination.resolved_qmgr_name: Str(MQPA)
+     -> w3.tracestate: Str(zz88=MODEL)
+     -> messaging.ibmmq.message.put_appl_type: Str(MQAT_UNIX)
+     -> messaging.system: Str(ibmmq)
+     -> messaging.operation.name: Str(MQGET)
+     -> messaging.ibmmq.message.user_id: Str(COLIN)
+     -> messaging.ibmmq.application.name: Str(python3.14                  )
+     -> os.type: Str(z_os)
+     -> log.file.name: Str(input.json)
+Links:
+SpanLink #0
+     -> Trace ID: c5dcc0bf1c77965f2a661a70ff3838fd
+     -> ID: e354fe8db0c05e80
+     -> TraceState: 
+     -> DroppedAttributesCount: 0
+	{"resource": {"service.instance.id": "6555a4d4-f520-4a8c-9fe5-037ec37acab9", "service.name": "otelcol-contrib", "service.version": "0.156.0"}, "otelcol.component.id": "debug", "otelcol.component.kind": "exporter", "otelcol.signal": "traces"}
+2026-09-25T16:45:09.955Z	info	otelcol@v0.156.0/collector.go:397	Received signal from OS	{"resource": {"service.instance.id": "6555a4d4-f520-4a8c-9fe5-037ec37acab9", "service.name": "otelcol-contrib", "service.version": "0.156.0"}, "signal": "interrupt"}
+2026-09-25T16:45:09.955Z	info	service@v0.156.0/service.go:293	Starting shutdown...	{"resource": {"service.instance.id": "6555a4d4-f520-4a8c-9fe5-037ec37acab9", "service.name": "otelcol-contrib", "service.version": "0.156.0"}}
+2026-09-25T16:45:09.955Z	info	extensions/extensions.go:69	Stopping extensions...	{"resource": {"service.instance.id": "6555a4d4-f520-4a8c-9fe5-037ec37acab9", "service.name": "otelcol-contrib", "service.version": "0.156.0"}}
+2026-09-25T16:45:09.956Z	info	service@v0.156.0/service.go:307	Shutdown complete.	{"resource": {"service.instance.id": "6555a4d4-f520-4a8c-9fe5-037ec37acab9", "service.name": "otelcol-contrib", "service.version": "0.156.0"}}
