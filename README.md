@@ -129,7 +129,7 @@ this creates the file otel.in.json, which is referred to in the o1.sh script
 ```
 sh o1.sh
 ```
-This will read the file, and the data will flash by in the window
+This will read the file, and the data will flash by in the terminal window
 
 Open a browser and point it to http://localhost:16686
 
@@ -139,7 +139,11 @@ When you have finished shutdown O1 and Jaeger ( I use ctrl-c to cancel them)
 
 # displaying data in Prometheus
 
-I would not normally display data in Prometheus, because Grafana does it better.  But it is occasionally useful to use Proometheus to look at the raw data.
+I would not normally display data in Prometheus, 
+because Grafana does it better.  
+But it is occasionally useful to use Proometheus to look at the raw data.
+
+The instructions below use a different OTEL script - because it uses a different configuration file o2.yaml.
 
 ```
 Start a terminal
@@ -158,7 +162,7 @@ Open a web browser with url http://localhost:9090/
 
 - In the input box >_ start typing *trace*, 
 it should display the variables available to you.  
-Select *traces_span_metrics_duration_milliseconds_count* 
+Select *traces_span_metrics_duration_milliseconds_count* . 
 Select *Execute*
 Click on Table.   This will display the data records and all the fields.  At the right hand end is the value
 
@@ -189,3 +193,76 @@ Below the graph is the data.  Click on the top value - and you see the graph jus
 Change the query to *traces_span_metrics_duration_milliseconds_sum/traces_span_metrics_duration_milliseconds_count*
 
 This gives you the average time for all the spans.   This is confusing becaus the biggest value (span name=payroll) is the total transaction, above this are the individual spans.... so we have double accounting here.
+
+
+# Grafana
+
+```
+fixdate ...
+sh o2.sh
+sh  p1.sh
+st g1.
+```
+
+Use brower localhost:3000
+
+- Connections -> Add new connection
+- Search prometheus, install it if needed
+- Click on Add new data source 
+- Prometheus servier URL  http://prometheus:9090
+- No authentication
+Go to bottom  - Save and test
+
+* Successfully queried the Prometheus API.
+Next, you can start to visualize data by building a dashboard from scratch or by querying data in the Explore view.*
+
+Click on Explore view
+- Metric - select pulldown for Select Metric
+- Select traces_span_metrics_duration_milliseconds_count ( and copy it to the clipboard)
+- At top clock on refresh (blue box with circulating arrows in it)
+- You should get a graph
+- In the graph are - click stacked bars
+- Below the graph is Raw 
+
+## Create a dashboard
+
+- Left hand side Dashboard -> New -> New DaShboard
+- Click on the blue cross
+- Click on Configure vizualisation
+- Data Source.  Pull down - select Prometheus
+- Metric Pull down -> traces_span_metrics_duration_milliseconds_count
+- Top of screen Save ( in blue box)  Give it a name
+- Top of screen - > Refresh
+- Last 6 hours  -> pull down - last 30 minutes
+- Put mouse on a line in the graph
+- Back to queries.    You have query A, and Metrics traces_span_metrics_duration_milliseconds_count.
+- Click on Label filters.  Pick span_name, = Payroll 
+- Select run queries
+- Go to top and Save
+
+### Change graph type
+
+- Click on time series change.  Experiment with difference chart type
+- Go back to Time series
+- Scroll down - play with Panel types, and other attribute
+
+### Data links
+- In right hand size... configuring times Series scroll down to *Data links and actions*
+- Add 
+http://localhost:16686/search?end=${__to}000&limit=20&service=MQPA&start=${__from}000&Tags={"span_name":"MQGET CSERVER"}
+
+- Go back to graph - put mouse on line,  single click... the link is at the bottom
+
+- Go back to the Data links and actions. Click on add action...  cancel
+- Click on Value Mapping
+
+
+## Import a dashboard
+
+There is a file, grafana.dash3.json which contains some work in progress ... it does not match the data
+
+- Select Dashboards from the left side pane
+- On the top line +^ select import dashboard
+- Drag grafaba.dash.3.json to the top box.
+- In any panel select the 3 vertical bots.  You can select edit to change the panel.
+
