@@ -7,6 +7,9 @@ I'll list the files, and what they do.  I'll also give a quick guide to explorin
 
 I run on Ubuntu Linux.  I run the various tool each in their own terminal window, so it is easy to canc and restart a tool.  I haven't tested this material on other platforms.
 
+I use dockerto create my images - it is easy and it works.  For OTEL, Jaeger and Prometheus, Ive configured it so the data is deleted every time.
+For Grafana, the data is not deleted, so you can save dashboards and other configuation across sessions.
+
 ## What's what
 
 - Opentelemetry collector takes Opentelemetry data from work running across silos and converts it to a form suitable for the other tools
@@ -24,7 +27,7 @@ I use multiple windows to run the tools.  I change the title of the terminal win
 - oo.sh  for OTEL
 - jj.sh  for Jaeger
 - pp.sh  for Promethus
-. gg.sh  for Grafana
+- gg.sh  for Grafana
 
 ## Running the tools
 
@@ -32,6 +35,8 @@ I use multiple windows to run the tools.  I change the title of the terminal win
 
 - o1.sh runs an Opentemetry collector using file input, and the Jaeger output can be displayed in a web browser.  
 - o1.yaml  the configuration file for the Opentelemetry configuration used by o1.sh
+- o2.sh this is used to use Prometheus and Grafana
+- o2.yaml the definitions needed for o2.sh .
 
 ### Jaeger
 
@@ -118,7 +123,7 @@ sh jj.sh
 ```
 
 ## Start the Opentelemetry collector
-Switch to the virtual environment
+Switch to the virtual environment, and reset the dates in the data
 ```
 . nenv/bin/activate 
 . oo.sh
@@ -133,15 +138,15 @@ This will read the file, and the data will flash by in the terminal window
 
 Open a browser and point it to http://localhost:16686
 
-It may take a minute or two for the data to arrive.
+It may take a minute or two for the data to arrive.  Click on refresh or search
 
-When you have finished shutdown O1 and Jaeger ( I use ctrl-c to cancel them)
+When you have finished shutdown O1 and Jaeger ( I use ctrl-c to cancel them).
 
-# displaying data in Prometheus
+# Displaying data in Prometheus
 
 I would not normally display data in Prometheus, 
 because Grafana does it better.  
-But it is occasionally useful to use Proometheus to look at the raw data.
+But it is occasionally useful to use Prometheus to look at the raw data.
 
 The instructions below use a different OTEL script - because it uses a different configuration file o2.yaml.
 
@@ -184,9 +189,9 @@ There is a box with |- 1h +|  this allows you to zoom in our out of a the time r
 
 Click on *Stacked* to see the data as stacked, giving the total count, ( up to 110)
 or *Unstacked* where the values are all from the base line.   All values
-are 10 - so it doesnt show much
+are 10 - so it doesnt show much.
 
-Selec *Stacked* and move the cursor over the colours.   You can see the information for that block of data
+Select *Stacked* and move the cursor over the colours.   You can see the information for that block of data.
 
 Below the graph is the data.  Click on the top value - and you see the graph just for that value.  Click it again to see all data.
 
@@ -196,12 +201,17 @@ This gives you the average time for all the spans.   This is confusing becaus th
 
 
 # Grafana
-
+The first time you need to set up Grafana
 ```
-fixdate ...
+sh g0.sh
+```
+
+Thene you can use
+```
+python3 python3 fixtime.py prometheus.data.json 
 sh o2.sh
-sh  p1.sh
-st g1.
+sh p1.sh
+sh g1.sh
 ```
 
 Use brower localhost:3000
@@ -209,34 +219,37 @@ Use brower localhost:3000
 - Connections -> Add new connection
 - Search prometheus, install it if needed
 - Click on Add new data source 
-- Prometheus servier URL  http://prometheus:9090
+- Prometheus servier URL http://prometheus:9090
 - No authentication
 Go to bottom  - Save and test
 
 * Successfully queried the Prometheus API.
-Next, you can start to visualize data by building a dashboard from scratch or by querying data in the Explore view.*
+Next, you can start to visualize data by building a dashboard 
+from scratch or by querying data in the Explore view.*
 
 Click on Explore view
 - Metric - select pulldown for Select Metric
-- Select traces_span_metrics_duration_milliseconds_count ( and copy it to the clipboard)
+- Select traces_span_metrics_duration_milliseconds_count (and copy it to the clipboard)
 - At top clock on refresh (blue box with circulating arrows in it)
 - You should get a graph
-- In the graph are - click stacked bars
+- In the graph click stacked bars
 - Below the graph is Raw 
 
 ## Create a dashboard
 
-- Left hand side Dashboard -> New -> New DaShboard
+- Left hand side Dashboard -> New -> New Dashboard
 - Click on the blue cross
 - Click on Configure vizualisation
 - Data Source.  Pull down - select Prometheus
 - Metric Pull down -> traces_span_metrics_duration_milliseconds_count
-- Top of screen Save ( in blue box)  Give it a name
+- Top of screen Save (in blue box).  Give it a name
 - Top of screen - > Refresh
-- Last 6 hours  -> pull down - last 30 minutes
+- Last 6 hours  -> pull down -> last 30 minutes
 - Put mouse on a line in the graph
-- Back to queries.    You have query A, and Metrics traces_span_metrics_duration_milliseconds_count.
-- Click on Label filters.  Pick span_name, = Payroll 
+- Back to queries.    
+You have query A, and Metrics traces_span_metrics_duration_milliseconds_count.
+- Click on Label filters.  Pick span_name = Payroll .
+This wil display only those spans with the value. ( Is is w3.tracedata=tran=Payroll ?)
 - Select run queries
 - Go to top and Save
 
@@ -254,7 +267,7 @@ http://localhost:16686/search?end=${__to}000&limit=20&service=MQPA&start=${__fro
 - Go back to graph - put mouse on line,  single click... the link is at the bottom
 
 - Go back to the Data links and actions. Click on add action...  cancel
-- Click on Value Mapping
+- Click on Value Mapping to see what you can do
 
 
 ## Import a dashboard
@@ -264,5 +277,6 @@ There is a file, grafana.dash3.json which contains some work in progress ... it 
 - Select Dashboards from the left side pane
 - On the top line +^ select import dashboard
 - Drag grafaba.dash.3.json to the top box.
-- In any panel select the 3 vertical bots.  You can select edit to change the panel.
+- In any panel select the 3 vertical bots.  
+You can select edit to change the panel.
 
